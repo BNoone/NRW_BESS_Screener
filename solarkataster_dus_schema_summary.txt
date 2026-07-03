@@ -1,0 +1,285 @@
+
+========================================================================
+  1. LOADING SHAPEFILE
+========================================================================
+Path : /Users/bogdankolchenko/Desktop/Pet_Projects/NRW_BESS_Screener/data/shp_duesseldorf/Solarkataster-Potentiale-Photovoltaik_05111000_Duesseldorf.shp
+Done : 305,939 rows loaded
+
+========================================================================
+  2. OVERVIEW
+========================================================================
+Total roof facets (rows) : 305,939
+Total columns            : 44
+CRS                      : EPSG:25832
+EPSG                     : 25832
+Geometry type(s)         : ['Polygon', 'MultiPolygon']
+Bounding box (m)         : minX=338685  minY=5665822  maxX=356127  maxY=5690998
+
+========================================================================
+  3. COLUMN NAMES AND DATA TYPES
+========================================================================
+    column    dtype
+      name   object
+    geb_id   object
+  richtung    int64
+   neigung    int64
+    mod_id   object
+win_median  float64
+ yr_median  float64
+jan_median  float64
+feb_median  float64
+mrz_median  float64
+apr_median  float64
+mai_median  float64
+jun_median  float64
+jul_median  float64
+aug_median  float64
+sep_median  float64
+okt_median  float64
+nov_median  float64
+dez_median  float64
+   dachtyp   object
+   modarea  float64
+modarea_ow  float64
+    radabs    int64
+ radabs_ow    int64
+   gradprz    int64
+       str  float64
+        kw  float64
+   kwh_kwp  float64
+himmel_kat   object
+    anzahl    int64
+ modanetto  float64
+modanetto_    int64
+    gem_gn   object
+    gem_kn   object
+  kreis_gn   object
+  kreis_kn   object
+regierung_   object
+regierung1   object
+planung_be   object
+      jahr   object
+  LANUK_ID   object
+geom_Lengt  float64
+ geom_Area  float64
+  geometry geometry
+
+========================================================================
+  4. FIRST 5 ROWS (all columns)
+========================================================================
+               name              geb_id  richtung  neigung                mod_id  win_median  yr_median  jan_median  feb_median  mrz_median  apr_median  mai_median  jun_median  jul_median  aug_median  sep_median  okt_median  nov_median  dez_median  dachtyp  modarea  modarea_ow  radabs  radabs_ow  gradprz      str     kw  kwh_kwp himmel_kat  anzahl  modanetto  modanetto_      gem_gn    gem_kn    kreis_gn  kreis_kn  regierung_ regierung1  planung_be  jahr      LANUK_ID  geom_Lengt  geom_Area
+0  DENW20AL0000aSGu  Geb1701338lw0303_b       175       43  Mod_ID391763lw0303_b       428.0     1080.0      1018.0      1553.0      3048.0      3938.0      4650.0      4484.0      4684.0      4350.0      3362.0      2408.0      1298.0       832.0  geneigt   60.738      60.738    1080       1080       95  5317.30  6.091  873.037        Süd      14     27.974          28  Düsseldorf  05111000  Düsseldorf  05111000  Düsseldorf   05100000  Düsseldorf  2022  PPVD_2280613   55.806152  40.382451
+1  DENW20AL0000pC8d  Geb1597931lw0303_b       170       39  Mod_ID056570lw0303_b       407.0     1053.0       999.0      1474.0      2878.0      3837.0      4604.0      4475.0      4652.0      4280.0      3236.0      2286.0      1249.0       828.0  geneigt   47.631      47.631    1053       1053       93  2221.90  2.610  851.211        Süd       6     11.989          12  Düsseldorf  05111000  Düsseldorf  05111000  Düsseldorf   05100000  Düsseldorf  2022  PPVD_2280614   61.092416  33.651357
+2  DENW20AL0000ltHL  Geb1693909lw0303_b       225       52  Mod_ID044437lw0303_b       365.0      983.0       809.0      1273.0      2638.0      3574.0      4381.0      4199.0      4393.0      4043.0      2958.0      2036.0      1012.0       611.0  geneigt   22.866      22.866     983        983       86  1382.68  1.740  794.626        Süd       4      7.992           8  Düsseldorf  05111000  Düsseldorf  05111000  Düsseldorf   05100000  Düsseldorf  2022  PPVD_2280615   27.504249  12.797834
+3  DENW20AL0000sJcm  Geb1649226lw0303_b       215       47  Mod_ID146357lw0303_b       408.0     1058.0       980.0      1458.0      2908.0      3852.0      4573.0      4363.0      4577.0      4258.0      3251.0      2261.0      1225.0       828.0  geneigt  101.829     101.829    1058       1058       93  8185.33  9.571  855.253        Süd      22     43.958          44  Düsseldorf  05111000  Düsseldorf  05111000  Düsseldorf   05100000  Düsseldorf  2022  PPVD_2280616   61.056738  63.133548
+4  DENW20AL0000qVhh  Geb1652892lw0303_b       180       32  Mod_ID413786lw0303_b       416.0     1101.0       959.0      1469.0      2998.0      4013.0      4879.0      4714.0      4915.0      4515.0      3353.0      2304.0      1202.0       782.0  geneigt   36.134      36.134    1101       1101       97  3484.67  3.915  890.013        Süd       9     17.983          18  Düsseldorf  05111000  Düsseldorf  05111000  Düsseldorf   05100000  Düsseldorf  2022  PPVD_2280617   25.920473  27.857247
+
+========================================================================
+  5. NUMERIC COLUMN STATISTICS (min / max / mean / median)
+========================================================================
+                 min           max      mean    median
+richtung      -1.000       359.000   139.776   136.000
+neigung        0.000        88.000    28.964    33.000
+win_median   139.000       460.000   295.523   296.000
+yr_median    557.000     1,141.000   888.754   908.000
+jan_median   238.000     1,181.000   616.713   583.000
+feb_median   322.000     1,727.000   953.912   942.000
+mrz_median   884.000     3,230.000 2,170.749 2,220.000
+apr_median 1,482.000     4,173.000 3,243.770 3,350.000
+mai_median 2,552.000     5,037.000 4,284.045 4,398.000
+jun_median 2,338.000     4,946.000 4,306.077 4,397.000
+jul_median 2,512.000     5,112.000 4,435.578 4,540.000
+aug_median 2,190.000     4,640.000 3,808.350 3,917.000
+sep_median 1,012.000     3,558.000 2,533.353 2,609.000
+okt_median   603.000     2,607.000 1,595.422 1,594.000
+nov_median   253.000     1,516.000   733.801   691.000
+dez_median   171.000     1,048.000   465.539   420.000
+modarea        2.782    12,711.000    51.029    32.894
+modarea_ow     5.563    25,422.100    61.627    36.361
+radabs       557.000     1,141.000   918.566   946.000
+radabs_ow    557.000     1,141.000   895.245   919.000
+gradprz       48.000       100.000    80.510    83.000
+str          391.736 2,544,920.000 5,039.983 2,312.630
+kw             0.870     2,828.590     6.535     3.045
+kwh_kwp      450.261       922.348   742.540   764.716
+anzahl         2.000     6,502.000    15.023     7.000
+modanetto      3.996    12,991.700    30.018    13.987
+modanetto_     4.000    12,992.000    30.042    14.000
+geom_Lengt     9.080     6,590.027    44.901    32.942
+geom_Area      5.000    31,777.605    55.571    28.312
+
+========================================================================
+  6. CATEGORICAL / STRING COLUMN SUMMARIES
+========================================================================
+
+  name  (unique: 134890, nulls: 0)
+    DENW20AL0000gEbx                               434
+    DENW20AL0000gEyr                               267
+    DENW20AL0000aUz5                               196
+    DENW20AL0000kvZM                               161
+    DENW20AL00000jJz                               154
+    DENW20AL0000DTZw                               147
+    DENW20AL00000ixr                               145
+    DENW20AL0000kyl9                               145
+    DENW20AL00000iyf                               144
+    DENW20AL0000QqBv                               133
+
+  geb_id  (unique: 142377, nulls: 0)
+    Geb1717018lw0302_h                             267
+    Geb1711758lw0303_a                             204
+    Geb2048146lw0303_f                             154
+    Geb2138998lw0303_e                             147
+    Geb4415552lw0203_m                             145
+    Geb2144794lw0303_e                             144
+    Geb1687754lw0303_c                             135
+    Geb1721118lw0303_b                             125
+    Geb1654234lw0303_c                             122
+    Geb2047354lw0303_f                             120
+
+  mod_id  (unique: 305939, nulls: 0)
+    Mod_ID391763lw0303_b                             1
+    Mod_ID079844lw0303_g                             1
+    Mod_ID000450lw0303_g                             1
+    Mod_ID247204lw0303_g                             1
+    Mod_ID194544lw0303_g                             1
+    Mod_ID001664lw0303_g                             1
+    Mod_ID004629lw0303_g                             1
+    Mod_ID198613lw0303_g                             1
+    Mod_ID002848lw0303_g                             1
+    Mod_ID077404lw0303_g                             1
+
+  dachtyp  (unique: 2, nulls: 0)
+    geneigt                                    238,424
+    flach                                       67,515
+
+  himmel_kat  (unique: 5, nulls: 0)
+    Süd                                         68,974
+    Flach                                       67,515
+    Ost                                         63,335
+    West                                        62,498
+    Nord                                        43,617
+
+  gem_gn  (unique: 1, nulls: 0)
+    Düsseldorf                                 305,939
+
+  gem_kn  (unique: 1, nulls: 0)
+    05111000                                   305,939
+
+  kreis_gn  (unique: 1, nulls: 0)
+    Düsseldorf                                 305,939
+
+  kreis_kn  (unique: 1, nulls: 0)
+    05111000                                   305,939
+
+  regierung_  (unique: 1, nulls: 0)
+    Düsseldorf                                 305,939
+
+  regierung1  (unique: 1, nulls: 0)
+    05100000                                   305,939
+
+  planung_be  (unique: 1, nulls: 0)
+    Düsseldorf                                 305,939
+
+  jahr  (unique: 2, nulls: 0)
+    2022                                       303,749
+    2020                                         2,190
+
+  LANUK_ID  (unique: 305939, nulls: 0)
+    PPVD_2280613                                     1
+    PPVD_2484578                                     1
+    PPVD_2484576                                     1
+    PPVD_2484575                                     1
+    PPVD_2484574                                     1
+    PPVD_2484573                                     1
+    PPVD_2484572                                     1
+    PPVD_2484571                                     1
+    PPVD_2484570                                     1
+    PPVD_2484569                                     1
+
+========================================================================
+  7. NULL / MISSING VALUE COUNTS
+========================================================================
+No null values found in any column.
+
+========================================================================
+  8. METADATA — FIELD ABBREVIATION DICTIONARY
+========================================================================
+Metadata file: Metadaten_PV_Dach_2024_09_opendata.xlsx
+Sheets        : ['Infos zur den Daten', 'Attribute']
+
+
+--- Sheet: 'Infos zur den Daten' ---
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Solarkataster NRW - Photovoltaik auf Dachflächen, Stand 09/2024
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Methodik
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Das Solarkataster NRW wurde auf der Grundlage von landesweit verfügbaren, hochaufgelösten Laserscandaten (Datenquelle: Land NRW) erstellt. Jedes Jahr wird ein Teil NRWs neu beflogen, in der Regel in einem 5-jährigem Turnus. Aus diesen wurde ein flächendeckendes Digitales Oberflächenmodell (DOM) in einer Auflösung von 0,5 Meter mal 0,5 Meter für die Dachflächenanalyse erstellt.
+                                                                                                                                                                                                                                            Für die Potenzialanalyse der Dachflächen konnten durch Verschneidung dieser Daten mit einer Karte aller Gebäudeumrisse sämtliche Dachflächen in Nordrhein-Westfalen ermittelt werden. Die Dachflächen wurden wiederum in homogene Teilflächen zerlegt, die jeweils über eine einheitliche Neigung und Ausrichtung verfügen und damit gleichermaßen für Solarmodule belegbar sind. Durch die hohe Auflösung des digitalen Oberflächenmodells und die Zerlegung in homogene Teilflächen konnten auch kleinteilige Dachelemente, wie beispielsweise Schornsteine, Gauben, Gehölze und andere unterbrechende Strukturen, ausfindig gemacht werden.
+                                                                                                                                                                                                                                                                                                                                                                                                              Über Strahlungsdaten des Deutschen Wetterdienstes wurde für ganz NRW die solare Einstrahlung sowie deren prozentuale Verschattung errechnet – und zwar unter Berücksichtigung der tages- und jahreszeitlich wechselnden Einstrahlung. Verschattungen können durch Bäume, angrenzende Gebäude, Dachaufbauten oder Geländeerhöhungen verursacht werden. Stark abgeschattete Bereiche sowie zu kleine Flächen wurden als ungeeignet aus der weiteren Berechnung herausgenommen.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Anschließend konnte eine Vielzahl von Parametern für jede mit Modulen belegbare Dachfläche berechnet werden, wie beispielsweise die nutzbare Modulfläche, die installierbare Leistung und der potenzielle Stromertrag .
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Bautechnische Faktoren wie z.B. der Zustand und die Statik des Daches oder Gebäudes oder die Eigenschaften des Untergrundes können auf dieser Datengrundlage nicht erfasst werden. Hierfür ist im Einzelnen eine gesonderte fachmännische Prüfung erforderlich.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Der Datensatz wurde erstmals 2018 veröffentlicht. Der vorliegende Datensatz mit Stand 09/2024 enthält eine Neuberechnung dieser Daten. Für die Aktualisierung wurden neue Einstrahlungsdaten des Deutschen Wetterdienstes, aktuelle Laserscandaten und  technische Parameter verwendet, die dem aktuellen Stand der Technik entsprechen. 
+Der Datensatz umfasst die Dachteilflächen, die weniger als 20 Prozent verschattet sind. Auf Ihnen kann mindestens ein Modul plaziert werden. Als Flachdach werden Dachflächen mit einer Neigung von zehn Grad und weniger bezeichnet. Bei Flachdächern wird angenommen, dass bei einer Aufständerung nach Süden 40 Prozent der Fläche genutzt werden kann, bei einer Ost-West-Belegung 80 %. Der Modulbelegungsalgorithmus wurde seit 2018 weiter entwickelt. Er prüft mittlerweile sowohl eine vertikale als auch eine horizontale Belegung der Dachfläche und gibt den größeren Wert aus. Die Eignung einer Fläche wird bewusst nicht an der Einstrahlungsstärke festgemacht, da die Wirtschaftlichkeit einer Anlage heutzutage sehr stark auch von anderen Faktoren, wie beispielsweise Eigenverbrauch, Strompreise etc. abhängig ist und daher immer individuell bewertet werden muss.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Für die Berechnung der installierbaren Leistungen und Stromerträge wurden Solarmodule mit einem Wirkungsgrad von 21,7 % verwendet.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       NaN
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Landesamt für Natur, Umwelt und Verbraucherschutz NRW
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Fachbereich 37: Fachzentrum Klimaanpassung, Klimaschutz, Wärme und erneuerbare Energien Landesamt für Natur Umwelt und Verbraucherschutz NRW
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Adresse: Leibnizstr. 10, 45659 Recklinghausen
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Dienstort: Wallneyerstr. 6, 45133 Essen
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Telefon: 02361 / 305-2096
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        E-Mail: fachbereich37@lanuv.nrw.de
+
+--- Sheet: 'Attribute' ---
+Atributtabelle Solarkataster NRW - Photovoltaik auf Dachflächen (09/2024)           NaN       NaN                                                                                                                                                                           NaN
+                                                               Parameter            NaN   Einheit                                                                                                                                                                 Beschreibung 
+                                                                 LANUV_ID          Text         -                                                                                                                                            eindeutige ID jeder Dachteilfläche
+                                                                     name  Long Integer         -                                                                                                                                    Information aus den Liegenschaften (ALKIS)
+                                                                   geb_id          Text         -                                                                                                                                                               ID des Gebäudes
+                                                                   mod_id          Text         -                                                                                                                                                         ID der Teildachfläche
+                                                                      NaN           NaN       NaN                                                                                                                                                                           NaN
+                                                 Parameter zur Dachfläche           NaN       NaN                                                                                                                                                                           NaN
+                                                                 richtung  Long Integer         °                                                                                                           Aurichtung der Fläche ( -1°= Flachdach, 180°=Süd, 270°= West etc. )
+                                                               himmel_kat          Text         -                                                                                                                       Himmelsrichtung, in die die Dachfläche ausgerichtet ist
+                                                                  neigung  Long Integer         °                                                                                                                                                            Neigung der Fläche
+                                                                  dachtyp          Text         -                                                                                                                                                            flach oder geneigt
+                                                                  modarea  Long Integer        m²                                             Für die Solarnutzung geeignete Brutto - Dachflächengröße in m² (3D Fläche) - bei Flachdächern bei einer Aufständerung nach Süden.
+                                                               modarea_ow  Long Integer       NaN                                          Für die Solarnutzung geeignete Brutto - Dachflächengröße in m² (3D Fläche) - bei Flachdächern bei einer Aufständerung nach Ost/West.
+                                                                 anzahl_0  Long Integer       NaN                                  Anzahl der Module, die laut Modulbelegungsberechnung auf die geeignete Dachfläche passen unter Annahme folgender Modulgröße: 1,767 m*1,041 m
+                                                                 belegt_0        Double        m²             Bruttokollektorfläche der Module, die laut Modulbelegungsberechnung auf die geeignete Dachfläche passen in m² unter Annahme folgender Modulgröße: 1,767 m*1,041 m
+                                                                modanetto         Float        m²              Nettokollektorfläche der Module, die laut Modulbelegungsberechnung auf die geeignete Dachfläche passen in m² unter Annahme folgender Modulgröße: 1,767 m*1,041 m
+                                                                      NaN           NaN       NaN                                                                                                                                                                           NaN
+                                                   Parameter Einstrahlung           NaN       NaN                                                                                                                                                                           NaN
+                                                               win_median         Float  kWh/m² a                                                                                                     Mittlere solare Einstrahlung pro m² auf die Dachfläche in der Heizperiode
+                                                                yr_median         Float  kWh/m² a                                                                                                              Mittlere jährliche solare Einstrahlung pro m² auf die Dachfläche
+                                                               jan_median         Float Wh/m² Tag                                                                                                     Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Januar
+                                                               feb_median         Float Wh/m² Tag                                                                                                    Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Februar
+                                                               mrz_median         Float Wh/m² Tag                                                                                                       Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im März
+                                                               apr_median         Float Wh/m² Tag                                                                                                      Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im April
+                                                               mai_median         Float Wh/m² Tag                                                                                                        Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Mai
+                                                               jun_median         Float Wh/m² Tag                                                                                                       Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Juni
+                                                               jul_median         Float Wh/m² Tag                                                                                                       Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Juli
+                                                               aug_median         Float Wh/m² Tag                                                                                                     Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im August
+                                                               sep_median         Float Wh/m² Tag                                                                                                  Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im September
+                                                               okt_median         Float Wh/m² Tag                                                                                                    Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Oktober
+                                                               nov_median         Float Wh/m² Tag                                                                                                   Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im November
+                                                               dez_median         Float Wh/m² Tag                                                                                                   Mittlere tägliche solare Einstrahlung pro m² auf die Dachfläche im Dezember
+                                                                   radabs  Long Integer   kWh/m²a Mittlere jährliche solare EInstrahlungsenergie pro m² auf die Dachfläche; bei Flachdächern ist die eintreffende Strahlung auf die nach Süden aufgeständerte Fläche angegeben.
+                                                                  gradprz  Long Integer         %                                        Mittlerer prozentualer Anteil der Einstrahlungsenergie auf die Fläche der maximal im Betrachtungsraum möglichen Einstrahlungsenergie. 
+                                                                      NaN           NaN       NaN                                                                                                                                                                           NaN
+                                         Parameter Leistungen und Erträge           NaN       NaN                                                                                                                                                                           NaN
+                                                                  kwh_kwp Short Integer   kWh/kWp                                                                                                            spezifischer Stromertrag pro kWp bei einem Wirkungsgrad von 21,7 %
+                                                                      str  Long Integer     kWh/a                                                                             Möglicher Stromertrag in kWh/a für die Dachfläche bei einem Wirkungsgrad der PV-Module von 21,7 %
+                                                                       kw         Float        kW                                                                                                     Mögliche zu installierende kWp-Leistung bei einem Wirkungsgrad von 21,7 %
+                                                                      NaN           NaN       NaN                                                                                                                                                                           NaN
+                                                                 Sonstige           NaN       NaN                                                                                                                                                                           NaN
+                                                                   gem_gn          Text         -                                                                                                                                                             Gemeinde Ganzname
+                                                                   gem_kn          Text         -                                                                                                                                                           Gemeinde Kennnummer
+                                                                 kreis_gn          Text         -                                                                                                                                                                Kreis Ganzname
+                                                                 kreis_kn          Text         -                                                                                                                                                              Kreis Kennnummer
+                                                             regierung_gn          Text         -                                                                                                                                                     Regierungsbezirk Ganzname
+                                                             regierung_kn          Text         -                                                                                                                                                   Regierungsbezirk Kennnummer
+                                                          planung_bereich          Text         -                                                                                                                                                               Planungsbereich
+                                                                     jahr          Text         -                                                                                                                                                  Jahr der Laserscanbefliegung
