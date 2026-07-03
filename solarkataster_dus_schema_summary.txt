@@ -1,10 +1,3 @@
-
-========================================================================
-  1. LOADING SHAPEFILE
-========================================================================
-Path : /Users/bogdankolchenko/Desktop/Pet_Projects/NRW_BESS_Screener/data/shp_duesseldorf/Solarkataster-Potentiale-Photovoltaik_05111000_Duesseldorf.shp
-Done : 305,939 rows loaded
-
 ========================================================================
   2. OVERVIEW
 ========================================================================
