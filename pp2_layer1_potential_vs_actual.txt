@@ -1,0 +1,10 @@
+PP2 Layer 1 - Duesseldorf: Theoretical PV Potential vs. Actual Registered
+============================================================================
+Filter                       : dachtyp == 'geneigt' AND kw >= 10
+Total qualifying roofs        : 38,387
+Total theoretical potential   : 716,356.3 kWp
+Total theoretical annual yield: 531,306,252.4 kWh/year
+Actual registered (MaStR)     : 161,365 kWp
+Realized                      : 22.5% of pitched-roof potential (kw>=10) already installed
+Note: flat roofs (dachtyp == 'flach') are excluded, so this is a floor
+estimate of total potential, not the full physical ceiling.
