@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_678d148ace9285fa21e5f4c948c4d553 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_678d148ace9285fa21e5f4c948c4d553" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_678d148ace9285fa21e5f4c948c4d553 = L.map(
+                "map_678d148ace9285fa21e5f4c948c4d553",
+                {
+                    center: [51.2277, 6.7735],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b439e3fe968b36817c78b508c5182b50 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b439e3fe968b36817c78b508c5182b50.addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+            var circle_marker_d729fa876dffeadd5296044e58ca2b71 = L.circleMarker(
+                [51.198348, 6.767833],
+                {"bubblingMouseEvents": true, "color": "#9cc5bdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9cc5bdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_fc5f8ea87dc4849f5defea7b506d4ed2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_648cb0a9e3af6af044cb26c0c6e785d4 = $(`<div id="html_648cb0a9e3af6af044cb26c0c6e785d4" style="width: 100.0%; height: 100.0%;"><b>PPVD_2377332</b><br>Cadastre kwh/kWp: 921.5<br>Our kwh/kWp: 1075.5<br>Offset: +16.71%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_fc5f8ea87dc4849f5defea7b506d4ed2.setContent(html_648cb0a9e3af6af044cb26c0c6e785d4);
+            
+        
+
+        circle_marker_d729fa876dffeadd5296044e58ca2b71.bindPopup(popup_fc5f8ea87dc4849f5defea7b506d4ed2)
+        ;
+
+        
+    
+    
+            var circle_marker_eb08f8e31c50f8d9c0aff04c0fa72ed6 = L.circleMarker(
+                [51.203339, 6.735415],
+                {"bubblingMouseEvents": true, "color": "#3b8cbbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b8cbbff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_09ddfdde19ed879fff10f83c3576cd85 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_076f72eed58004198a09e491575f3a13 = $(`<div id="html_076f72eed58004198a09e491575f3a13" style="width: 100.0%; height: 100.0%;"><b>PPVD_2447590</b><br>Cadastre kwh/kWp: 920.7<br>Our kwh/kWp: 1071.9<br>Offset: +16.42%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_09ddfdde19ed879fff10f83c3576cd85.setContent(html_076f72eed58004198a09e491575f3a13);
+            
+        
+
+        circle_marker_eb08f8e31c50f8d9c0aff04c0fa72ed6.bindPopup(popup_09ddfdde19ed879fff10f83c3576cd85)
+        ;
+
+        
+    
+    
+            var circle_marker_bb5f6917ff564a76dacceaeb062e3fa9 = L.circleMarker(
+                [51.231566, 6.713392],
+                {"bubblingMouseEvents": true, "color": "#94c1bdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#94c1bdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_decbe499792a58ccc831d6f59961f0e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7de5626d93412a7eecb22c512a6f1128 = $(`<div id="html_7de5626d93412a7eecb22c512a6f1128" style="width: 100.0%; height: 100.0%;"><b>PPVD_2415787</b><br>Cadastre kwh/kWp: 920.7<br>Our kwh/kWp: 1074.4<br>Offset: +16.69%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_decbe499792a58ccc831d6f59961f0e7.setContent(html_7de5626d93412a7eecb22c512a6f1128);
+            
+        
+
+        circle_marker_bb5f6917ff564a76dacceaeb062e3fa9.bindPopup(popup_decbe499792a58ccc831d6f59961f0e7)
+        ;
+
+        
+    
+    
+            var circle_marker_37340be999239324ac63c6dcdb038f43 = L.circleMarker(
+                [51.199324, 6.780085],
+                {"bubblingMouseEvents": true, "color": "#e3efbfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3efbfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_7ae75dfdad90d9eb53e75a374ac49b74 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_874adbc12232b8fbd1a76379886c911e = $(`<div id="html_874adbc12232b8fbd1a76379886c911e" style="width: 100.0%; height: 100.0%;"><b>PPVD_2371964</b><br>Cadastre kwh/kWp: 919.1<br>Our kwh/kWp: 1074.7<br>Offset: +16.93%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_7ae75dfdad90d9eb53e75a374ac49b74.setContent(html_874adbc12232b8fbd1a76379886c911e);
+            
+        
+
+        circle_marker_37340be999239324ac63c6dcdb038f43.bindPopup(popup_7ae75dfdad90d9eb53e75a374ac49b74)
+        ;
+
+        
+    
+    
+            var circle_marker_c4f5990ce8912c19cafee2c8a31b6c67 = L.circleMarker(
+                [51.212383, 6.757199],
+                {"bubblingMouseEvents": true, "color": "#fffebeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffebeff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_c13ec360117464a627f465c830af6864 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73c4b044927435fe920e264c8f6b4d2d = $(`<div id="html_73c4b044927435fe920e264c8f6b4d2d" style="width: 100.0%; height: 100.0%;"><b>PPVD_2448702</b><br>Cadastre kwh/kWp: 919.1<br>Our kwh/kWp: 1075.5<br>Offset: +17.02%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_c13ec360117464a627f465c830af6864.setContent(html_73c4b044927435fe920e264c8f6b4d2d);
+            
+        
+
+        circle_marker_c4f5990ce8912c19cafee2c8a31b6c67.bindPopup(popup_c13ec360117464a627f465c830af6864)
+        ;
+
+        
+    
+    
+            var circle_marker_42cf0d1cdc383cbb7499072a5837ef86 = L.circleMarker(
+                [51.214123, 6.793538],
+                {"bubblingMouseEvents": true, "color": "#e8f2bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e8f2bfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_b63462eccf764b52c2ff07123d6345c2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_caae92258352e2d1095d7b50f65fcf32 = $(`<div id="html_caae92258352e2d1095d7b50f65fcf32" style="width: 100.0%; height: 100.0%;"><b>PPVD_2579573</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1073.9<br>Offset: +16.94%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_b63462eccf764b52c2ff07123d6345c2.setContent(html_caae92258352e2d1095d7b50f65fcf32);
+            
+        
+
+        circle_marker_42cf0d1cdc383cbb7499072a5837ef86.bindPopup(popup_b63462eccf764b52c2ff07123d6345c2)
+        ;
+
+        
+    
+    
+            var circle_marker_53f7406c2b9d2b2a7c25314a6180912f = L.circleMarker(
+                [51.199336, 6.780329],
+                {"bubblingMouseEvents": true, "color": "#fefabbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fefabbff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_7b8811d3ea77f1c60b9396039a35fa08 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c7f60dd23e1bdabe57138db49c1c534 = $(`<div id="html_3c7f60dd23e1bdabe57138db49c1c534" style="width: 100.0%; height: 100.0%;"><b>PPVD_2372968</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1074.7<br>Offset: +17.03%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_7b8811d3ea77f1c60b9396039a35fa08.setContent(html_3c7f60dd23e1bdabe57138db49c1c534);
+            
+        
+
+        circle_marker_53f7406c2b9d2b2a7c25314a6180912f.bindPopup(popup_7b8811d3ea77f1c60b9396039a35fa08)
+        ;
+
+        
+    
+    
+            var circle_marker_e36d8425b4c3873234eebf3331343d7d = L.circleMarker(
+                [51.207203, 6.762407],
+                {"bubblingMouseEvents": true, "color": "#3a8cbbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3a8cbbff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_3eead69bde0a162406428cf1799d6c32 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f193525ae2f4460db5d8f1d9bd6f3c9 = $(`<div id="html_2f193525ae2f4460db5d8f1d9bd6f3c9" style="width: 100.0%; height: 100.0%;"><b>PPVD_2369543</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1069.0<br>Offset: +16.41%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_3eead69bde0a162406428cf1799d6c32.setContent(html_2f193525ae2f4460db5d8f1d9bd6f3c9);
+            
+        
+
+        circle_marker_e36d8425b4c3873234eebf3331343d7d.bindPopup(popup_3eead69bde0a162406428cf1799d6c32)
+        ;
+
+        
+    
+    
+            var circle_marker_4f8c7b68e6b4b9f3f1486dacf23b4d2a = L.circleMarker(
+                [51.21041, 6.799067],
+                {"bubblingMouseEvents": true, "color": "#dbeabeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbeabeff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_dd72b12f0bcd89b893a26d2516033673 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_33f59a9bb7921217956df30e3aed6573 = $(`<div id="html_33f59a9bb7921217956df30e3aed6573" style="width: 100.0%; height: 100.0%;"><b>PPVD_2578759</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1073.5<br>Offset: +16.90%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_dd72b12f0bcd89b893a26d2516033673.setContent(html_33f59a9bb7921217956df30e3aed6573);
+            
+        
+
+        circle_marker_4f8c7b68e6b4b9f3f1486dacf23b4d2a.bindPopup(popup_dd72b12f0bcd89b893a26d2516033673)
+        ;
+
+        
+    
+    
+            var circle_marker_4b43918e2d05d5b251e41c670f794f8d = L.circleMarker(
+                [51.231619, 6.713974],
+                {"bubblingMouseEvents": true, "color": "#fefabbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fefabbff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_feeefc1111ff03f03d360e59bcf569fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5f57b3e021f5f3acf625515a661f687 = $(`<div id="html_a5f57b3e021f5f3acf625515a661f687" style="width: 100.0%; height: 100.0%;"><b>PPVD_2415696</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1074.7<br>Offset: +17.03%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_feeefc1111ff03f03d360e59bcf569fe.setContent(html_a5f57b3e021f5f3acf625515a661f687);
+            
+        
+
+        circle_marker_4b43918e2d05d5b251e41c670f794f8d.bindPopup(popup_feeefc1111ff03f03d360e59bcf569fe)
+        ;
+
+        
+    
+    
+            var circle_marker_1f1cb1dad09a6f4e187ed8841479315e = L.circleMarker(
+                [51.231706, 6.750765],
+                {"bubblingMouseEvents": true, "color": "#bdd9beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdd9beff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_b46cb66372fd8d72edd81fdfd780c072 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b30d39d8360f210b7c0604618575a9b1 = $(`<div id="html_b30d39d8360f210b7c0604618575a9b1" style="width: 100.0%; height: 100.0%;"><b>PPVD_2450016</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1072.7<br>Offset: +16.81%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_b46cb66372fd8d72edd81fdfd780c072.setContent(html_b30d39d8360f210b7c0604618575a9b1);
+            
+        
+
+        circle_marker_1f1cb1dad09a6f4e187ed8841479315e.bindPopup(popup_b46cb66372fd8d72edd81fdfd780c072)
+        ;
+
+        
+    
+    
+            var circle_marker_ad93c0c30c85b01c6b63d7afdbe87bd7 = L.circleMarker(
+                [51.210815, 6.773109],
+                {"bubblingMouseEvents": true, "color": "#bdd9beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdd9beff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_ef241cd90b048b9127c4428210bcbdc8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3db135ee5197bdf37f1ca8ce6a21cf9f = $(`<div id="html_3db135ee5197bdf37f1ca8ce6a21cf9f" style="width: 100.0%; height: 100.0%;"><b>PPVD_2352481</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1072.7<br>Offset: +16.81%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_ef241cd90b048b9127c4428210bcbdc8.setContent(html_3db135ee5197bdf37f1ca8ce6a21cf9f);
+            
+        
+
+        circle_marker_ad93c0c30c85b01c6b63d7afdbe87bd7.bindPopup(popup_ef241cd90b048b9127c4428210bcbdc8)
+        ;
+
+        
+    
+    
+            var circle_marker_17807e70263bb37dff1db2fdc5c1c84a = L.circleMarker(
+                [51.210827, 6.77489],
+                {"bubblingMouseEvents": true, "color": "#d8e8beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8e8beff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_fe13e6bef6cd98c1e548fdb63547e0f5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cf942355b21c079745d4e07c8f402a84 = $(`<div id="html_cf942355b21c079745d4e07c8f402a84" style="width: 100.0%; height: 100.0%;"><b>PPVD_2371279</b><br>Cadastre kwh/kWp: 918.3<br>Our kwh/kWp: 1073.4<br>Offset: +16.89%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_fe13e6bef6cd98c1e548fdb63547e0f5.setContent(html_cf942355b21c079745d4e07c8f402a84);
+            
+        
+
+        circle_marker_17807e70263bb37dff1db2fdc5c1c84a.bindPopup(popup_fe13e6bef6cd98c1e548fdb63547e0f5)
+        ;
+
+        
+    
+    
+            var circle_marker_0059d0f25f4370147874fffbf11f5407 = L.circleMarker(
+                [51.262957, 6.777882],
+                {"bubblingMouseEvents": true, "color": "#fae2abff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fae2abff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_0a75aba9b5525005cc0446d34efb9923 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_96840ca0156c8621263456569a82f74c = $(`<div id="html_96840ca0156c8621263456569a82f74c" style="width: 100.0%; height: 100.0%;"><b>PPVD_2376046</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1074.3<br>Offset: +17.09%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_0a75aba9b5525005cc0446d34efb9923.setContent(html_96840ca0156c8621263456569a82f74c);
+            
+        
+
+        circle_marker_0059d0f25f4370147874fffbf11f5407.bindPopup(popup_0a75aba9b5525005cc0446d34efb9923)
+        ;
+
+        
+    
+    
+            var circle_marker_b0add6fc5317f69d34ca066569bda09a = L.circleMarker(
+                [51.200442, 6.737805],
+                {"bubblingMouseEvents": true, "color": "#79b1bcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79b1bcff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_bcf5a76dcb82b8c682357f78780d08b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7050dfe288c4a8762a11661bf6b387bf = $(`<div id="html_7050dfe288c4a8762a11661bf6b387bf" style="width: 100.0%; height: 100.0%;"><b>PPVD_2447217</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1069.8<br>Offset: +16.60%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_bcf5a76dcb82b8c682357f78780d08b2.setContent(html_7050dfe288c4a8762a11661bf6b387bf);
+            
+        
+
+        circle_marker_b0add6fc5317f69d34ca066569bda09a.bindPopup(popup_bcf5a76dcb82b8c682357f78780d08b2)
+        ;
+
+        
+    
+    
+            var circle_marker_d192a198eb9b20efc9ffb6906f4bea9e = L.circleMarker(
+                [51.200006, 6.781177],
+                {"bubblingMouseEvents": true, "color": "#fdf4b7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdf4b7ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d5f4753a147a856ee0e3e5e15dabf328 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d84cacec48d389fc6bec1c016247071 = $(`<div id="html_7d84cacec48d389fc6bec1c016247071" style="width: 100.0%; height: 100.0%;"><b>PPVD_2374268</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1073.9<br>Offset: +17.04%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_d5f4753a147a856ee0e3e5e15dabf328.setContent(html_7d84cacec48d389fc6bec1c016247071);
+            
+        
+
+        circle_marker_d192a198eb9b20efc9ffb6906f4bea9e.bindPopup(popup_d5f4753a147a856ee0e3e5e15dabf328)
+        ;
+
+        
+    
+    
+            var circle_marker_2c9ce435f96c5ec088e210d863c123bf = L.circleMarker(
+                [51.321663, 6.745826],
+                {"bubblingMouseEvents": true, "color": "#a3c9bdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3c9bdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_6b5025b0982fe16181c011bfce331f82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2891172ed98704d56573531d9bf9a338 = $(`<div id="html_2891172ed98704d56573531d9bf9a338" style="width: 100.0%; height: 100.0%;"><b>PPVD_2407544</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1071.0<br>Offset: +16.73%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_6b5025b0982fe16181c011bfce331f82.setContent(html_2891172ed98704d56573531d9bf9a338);
+            
+        
+
+        circle_marker_2c9ce435f96c5ec088e210d863c123bf.bindPopup(popup_6b5025b0982fe16181c011bfce331f82)
+        ;
+
+        
+    
+    
+            var circle_marker_e2d39894ad2def9dc5f99afcc3a0c9fa = L.circleMarker(
+                [51.210719, 6.799571],
+                {"bubblingMouseEvents": true, "color": "#f3f8bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3f8bfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a693f444e0803a1bf8105d7234dacc1f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a35797f4cb124159e759ca876c2ad62 = $(`<div id="html_2a35797f4cb124159e759ca876c2ad62" style="width: 100.0%; height: 100.0%;"><b>PPVD_2586148</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1073.2<br>Offset: +16.97%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_a693f444e0803a1bf8105d7234dacc1f.setContent(html_2a35797f4cb124159e759ca876c2ad62);
+            
+        
+
+        circle_marker_e2d39894ad2def9dc5f99afcc3a0c9fa.bindPopup(popup_a693f444e0803a1bf8105d7234dacc1f)
+        ;
+
+        
+    
+    
+            var circle_marker_ec1f1d3f0bed44de1abc13b2679e57f8 = L.circleMarker(
+                [51.231772, 6.759068],
+                {"bubblingMouseEvents": true, "color": "#f9dca6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f9dca6ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2ff7c1d88eab859b78894b96eb13fbf9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_439b47758ea8be51a080430895bcd5d5 = $(`<div id="html_439b47758ea8be51a080430895bcd5d5" style="width: 100.0%; height: 100.0%;"><b>PPVD_2444840</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1074.5<br>Offset: +17.11%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_2ff7c1d88eab859b78894b96eb13fbf9.setContent(html_439b47758ea8be51a080430895bcd5d5);
+            
+        
+
+        circle_marker_ec1f1d3f0bed44de1abc13b2679e57f8.bindPopup(popup_2ff7c1d88eab859b78894b96eb13fbf9)
+        ;
+
+        
+    
+    
+            var circle_marker_7a9d7852b5bb019a4204c4470c36f75a = L.circleMarker(
+                [51.273435, 6.738618],
+                {"bubblingMouseEvents": true, "color": "#cce2beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cce2beff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_72d09390dfd23d10f0b03292c126f180 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ccbeff4962d9b0777c461e8e11960bd = $(`<div id="html_6ccbeff4962d9b0777c461e8e11960bd" style="width: 100.0%; height: 100.0%;"><b>PPVD_2449006</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1072.2<br>Offset: +16.86%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_72d09390dfd23d10f0b03292c126f180.setContent(html_6ccbeff4962d9b0777c461e8e11960bd);
+            
+        
+
+        circle_marker_7a9d7852b5bb019a4204c4470c36f75a.bindPopup(popup_72d09390dfd23d10f0b03292c126f180)
+        ;
+
+        
+    
+    
+            var circle_marker_2196c8d9c26925ab86ce13f00da0b06f = L.circleMarker(
+                [51.211474, 6.747093],
+                {"bubblingMouseEvents": true, "color": "#f8fbbfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8fbbfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d26f31db9b77627ebd8b8cdfa9f79dfd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6df453786000bdb22d50242cbd9cdc1 = $(`<div id="html_f6df453786000bdb22d50242cbd9cdc1" style="width: 100.0%; height: 100.0%;"><b>PPVD_2448244</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1073.4<br>Offset: +16.99%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_d26f31db9b77627ebd8b8cdfa9f79dfd.setContent(html_f6df453786000bdb22d50242cbd9cdc1);
+            
+        
+
+        circle_marker_2196c8d9c26925ab86ce13f00da0b06f.bindPopup(popup_d26f31db9b77627ebd8b8cdfa9f79dfd)
+        ;
+
+        
+    
+    
+            var circle_marker_2a6ed2948a4407342ce28412ecee3e44 = L.circleMarker(
+                [51.204154, 6.736859],
+                {"bubblingMouseEvents": true, "color": "#feffbfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feffbfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a17eddd9fef8f4ebefedebb1ec130125 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f40e99c33955971e80e3c0fb8b5b8e6 = $(`<div id="html_9f40e99c33955971e80e3c0fb8b5b8e6" style="width: 100.0%; height: 100.0%;"><b>PPVD_2426476</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1073.5<br>Offset: +17.01%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a17eddd9fef8f4ebefedebb1ec130125.setContent(html_9f40e99c33955971e80e3c0fb8b5b8e6);
+            
+        
+
+        circle_marker_2a6ed2948a4407342ce28412ecee3e44.bindPopup(popup_a17eddd9fef8f4ebefedebb1ec130125)
+        ;
+
+        
+    
+    
+            var circle_marker_1b00089c6c9f9815dee083fb75e6f739 = L.circleMarker(
+                [51.211283, 6.789032],
+                {"bubblingMouseEvents": true, "color": "#f8d5a1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8d5a1ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_8d809fb465897d504464bed5edac91fd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6c9bc614b4d216c78ced6df7a812e2a = $(`<div id="html_c6c9bc614b4d216c78ced6df7a812e2a" style="width: 100.0%; height: 100.0%;"><b>PPVD_2534402</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1074.7<br>Offset: +17.13%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_8d809fb465897d504464bed5edac91fd.setContent(html_c6c9bc614b4d216c78ced6df7a812e2a);
+            
+        
+
+        circle_marker_1b00089c6c9f9815dee083fb75e6f739.bindPopup(popup_8d809fb465897d504464bed5edac91fd)
+        ;
+
+        
+    
+    
+            var circle_marker_c5204a72d3a2e8bbd126db997dbdb5b9 = L.circleMarker(
+                [51.230797, 6.703075],
+                {"bubblingMouseEvents": true, "color": "#2b83baff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2b83baff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_31e12f61d839ec14ceb00b9640f0554f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_098b7e29cbd0e042e91a0314ce89f122 = $(`<div id="html_098b7e29cbd0e042e91a0314ce89f122" style="width: 100.0%; height: 100.0%;"><b>PPVD_2416648</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1067.7<br>Offset: +16.37%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_31e12f61d839ec14ceb00b9640f0554f.setContent(html_098b7e29cbd0e042e91a0314ce89f122);
+            
+        
+
+        circle_marker_c5204a72d3a2e8bbd126db997dbdb5b9.bindPopup(popup_31e12f61d839ec14ceb00b9640f0554f)
+        ;
+
+        
+    
+    
+            var circle_marker_8b2f517ed2053ab0d7ce0c18041b153a = L.circleMarker(
+                [51.231538, 6.713158],
+                {"bubblingMouseEvents": true, "color": "#fae0a9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fae0a9ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d4fa692ee8114072c6ed9928f30ca0f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5502864a1dd64dfac7e4850f2c34df52 = $(`<div id="html_5502864a1dd64dfac7e4850f2c34df52" style="width: 100.0%; height: 100.0%;"><b>PPVD_2415745</b><br>Cadastre kwh/kWp: 917.5<br>Our kwh/kWp: 1074.4<br>Offset: +17.10%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_d4fa692ee8114072c6ed9928f30ca0f1.setContent(html_5502864a1dd64dfac7e4850f2c34df52);
+            
+        
+
+        circle_marker_8b2f517ed2053ab0d7ce0c18041b153a.bindPopup(popup_d4fa692ee8114072c6ed9928f30ca0f1)
+        ;
+
+        
+    
+    
+            var circle_marker_1516f8e0b55baf9ed4def4dd3f697e02 = L.circleMarker(
+                [51.231708, 6.750301],
+                {"bubblingMouseEvents": true, "color": "#fdf1b5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdf1b5ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a1b1206ff7a688beb8218703bfb427b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1dde8548b8cee6f991d78abd1ca1d5d = $(`<div id="html_c1dde8548b8cee6f991d78abd1ca1d5d" style="width: 100.0%; height: 100.0%;"><b>PPVD_2445396</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1073.0<br>Offset: +17.05%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a1b1206ff7a688beb8218703bfb427b1.setContent(html_c1dde8548b8cee6f991d78abd1ca1d5d);
+            
+        
+
+        circle_marker_1516f8e0b55baf9ed4def4dd3f697e02.bindPopup(popup_a1b1206ff7a688beb8218703bfb427b1)
+        ;
+
+        
+    
+    
+            var circle_marker_b62cf82083395ae940770ba2f10ce654 = L.circleMarker(
+                [51.211164, 6.74669],
+                {"bubblingMouseEvents": true, "color": "#89babcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89babcff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2ea69008858119570d3ce3cb78371eab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_752a1daa9cbaa0575d431ca5830f24da = $(`<div id="html_752a1daa9cbaa0575d431ca5830f24da" style="width: 100.0%; height: 100.0%;"><b>PPVD_2447487</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1069.3<br>Offset: +16.65%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_2ea69008858119570d3ce3cb78371eab.setContent(html_752a1daa9cbaa0575d431ca5830f24da);
+            
+        
+
+        circle_marker_b62cf82083395ae940770ba2f10ce654.bindPopup(popup_2ea69008858119570d3ce3cb78371eab)
+        ;
+
+        
+    
+    
+            var circle_marker_406c51fdf986b18cb0cecfc900dd3531 = L.circleMarker(
+                [51.223661, 6.799137],
+                {"bubblingMouseEvents": true, "color": "#fbe8aeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fbe8aeff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a7b47ab656309aac9abd7e9d9f8f4b0b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_870daa08d35d9ce788e29ce893764104 = $(`<div id="html_870daa08d35d9ce788e29ce893764104" style="width: 100.0%; height: 100.0%;"><b>PPVD_2579989</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1073.2<br>Offset: +17.08%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_a7b47ab656309aac9abd7e9d9f8f4b0b.setContent(html_870daa08d35d9ce788e29ce893764104);
+            
+        
+
+        circle_marker_406c51fdf986b18cb0cecfc900dd3531.bindPopup(popup_a7b47ab656309aac9abd7e9d9f8f4b0b)
+        ;
+
+        
+    
+    
+            var circle_marker_8ddb429a8a8fd761665ff07c36c44dbf = L.circleMarker(
+                [51.21054, 6.775851],
+                {"bubblingMouseEvents": true, "color": "#d9e9beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d9e9beff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_6ad8e4490fd9817ef73fc4c1fce920d6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3928a3c82f171aeaa03e4b1b012acbd2 = $(`<div id="html_3928a3c82f171aeaa03e4b1b012acbd2" style="width: 100.0%; height: 100.0%;"><b>PPVD_2377357</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1071.6<br>Offset: +16.89%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_6ad8e4490fd9817ef73fc4c1fce920d6.setContent(html_3928a3c82f171aeaa03e4b1b012acbd2);
+            
+        
+
+        circle_marker_8ddb429a8a8fd761665ff07c36c44dbf.bindPopup(popup_6ad8e4490fd9817ef73fc4c1fce920d6)
+        ;
+
+        
+    
+    
+            var circle_marker_47c10907cca6fb2e19d893776b5b6bf2 = L.circleMarker(
+                [51.27342, 6.738906],
+                {"bubblingMouseEvents": true, "color": "#d9e9beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d9e9beff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2324363a446b281e3dfe2614e185f96e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f70188250b7836ac8c4ed31fdb2dc364 = $(`<div id="html_f70188250b7836ac8c4ed31fdb2dc364" style="width: 100.0%; height: 100.0%;"><b>PPVD_2449724</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1071.6<br>Offset: +16.89%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_2324363a446b281e3dfe2614e185f96e.setContent(html_f70188250b7836ac8c4ed31fdb2dc364);
+            
+        
+
+        circle_marker_47c10907cca6fb2e19d893776b5b6bf2.bindPopup(popup_2324363a446b281e3dfe2614e185f96e)
+        ;
+
+        
+    
+    
+            var circle_marker_4d45e9efdd666582f54a4ed6dc34b854 = L.circleMarker(
+                [51.210793, 6.774181],
+                {"bubblingMouseEvents": true, "color": "#fae0a9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fae0a9ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_bb908c3947c5ba7aa913ed2bb6df1efe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a3ff0b0e2ab9768e1fc99c625991eb65 = $(`<div id="html_a3ff0b0e2ab9768e1fc99c625991eb65" style="width: 100.0%; height: 100.0%;"><b>PPVD_2375330</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1073.4<br>Offset: +17.10%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_bb908c3947c5ba7aa913ed2bb6df1efe.setContent(html_a3ff0b0e2ab9768e1fc99c625991eb65);
+            
+        
+
+        circle_marker_4d45e9efdd666582f54a4ed6dc34b854.bindPopup(popup_bb908c3947c5ba7aa913ed2bb6df1efe)
+        ;
+
+        
+    
+    
+            var circle_marker_e839d4c9298515e6715c32cfff69a19e = L.circleMarker(
+                [51.231777, 6.758847],
+                {"bubblingMouseEvents": true, "color": "#f3b78cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3b78cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_94fe0c6c822a853105388487d1658070 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a11dd4e00819c2146b9c2e58bf1f36f9 = $(`<div id="html_a11dd4e00819c2146b9c2e58bf1f36f9" style="width: 100.0%; height: 100.0%;"><b>PPVD_2447210</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1074.5<br>Offset: +17.21%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_94fe0c6c822a853105388487d1658070.setContent(html_a11dd4e00819c2146b9c2e58bf1f36f9);
+            
+        
+
+        circle_marker_e839d4c9298515e6715c32cfff69a19e.bindPopup(popup_94fe0c6c822a853105388487d1658070)
+        ;
+
+        
+    
+    
+            var circle_marker_d4339e1a807cf83ff0bce02ab5a9bbf9 = L.circleMarker(
+                [51.199682, 6.780512],
+                {"bubblingMouseEvents": true, "color": "#fdf2b6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdf2b6ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_67020d38a52de4b92b4424b27ffc5700 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b082d71dbb901d6f275d24a92fc9f2d = $(`<div id="html_1b082d71dbb901d6f275d24a92fc9f2d" style="width: 100.0%; height: 100.0%;"><b>PPVD_2373994</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1073.0<br>Offset: +17.05%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_67020d38a52de4b92b4424b27ffc5700.setContent(html_1b082d71dbb901d6f275d24a92fc9f2d);
+            
+        
+
+        circle_marker_d4339e1a807cf83ff0bce02ab5a9bbf9.bindPopup(popup_67020d38a52de4b92b4424b27ffc5700)
+        ;
+
+        
+    
+    
+            var circle_marker_b67cc985e44292154be8172c47a245cb = L.circleMarker(
+                [51.211735, 6.789698],
+                {"bubblingMouseEvents": true, "color": "#f2af86ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2af86ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_3c666fd423f23c3ad5f985b8a0e3c871 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b8dd950ec9a78133c611ec59a281c69 = $(`<div id="html_5b8dd950ec9a78133c611ec59a281c69" style="width: 100.0%; height: 100.0%;"><b>PPVD_2584609</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1074.7<br>Offset: +17.23%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_3c666fd423f23c3ad5f985b8a0e3c871.setContent(html_5b8dd950ec9a78133c611ec59a281c69);
+            
+        
+
+        circle_marker_b67cc985e44292154be8172c47a245cb.bindPopup(popup_3c666fd423f23c3ad5f985b8a0e3c871)
+        ;
+
+        
+    
+    
+            var circle_marker_6c563f1b979e3c3033d27709e0cd0d2c = L.circleMarker(
+                [51.232104, 6.704221],
+                {"bubblingMouseEvents": true, "color": "#8cbcbdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8cbcbdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_6409bc6101266d1f71303cd8e207a7a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_77a8c3e30e8af7be3869cec5f0d19f06 = $(`<div id="html_77a8c3e30e8af7be3869cec5f0d19f06" style="width: 100.0%; height: 100.0%;"><b>PPVD_2415953</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1069.4<br>Offset: +16.66%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_6409bc6101266d1f71303cd8e207a7a0.setContent(html_77a8c3e30e8af7be3869cec5f0d19f06);
+            
+        
+
+        circle_marker_6c563f1b979e3c3033d27709e0cd0d2c.bindPopup(popup_6409bc6101266d1f71303cd8e207a7a0)
+        ;
+
+        
+    
+    
+            var circle_marker_bac324c73da3eb74e6765c9c906d32c2 = L.circleMarker(
+                [51.199684, 6.780917],
+                {"bubblingMouseEvents": true, "color": "#f1ae85ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1ae85ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_362e18821cf59c071f067c05d2112f8f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_97edccc2e244fc3ada6e4e5d47a53ead = $(`<div id="html_97edccc2e244fc3ada6e4e5d47a53ead" style="width: 100.0%; height: 100.0%;"><b>PPVD_2345758</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1074.7<br>Offset: +17.24%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_362e18821cf59c071f067c05d2112f8f.setContent(html_97edccc2e244fc3ada6e4e5d47a53ead);
+            
+        
+
+        circle_marker_bac324c73da3eb74e6765c9c906d32c2.bindPopup(popup_362e18821cf59c071f067c05d2112f8f)
+        ;
+
+        
+    
+    
+            var circle_marker_b117a3978e7dfde92e245f90fabfc704 = L.circleMarker(
+                [51.210714, 6.800247],
+                {"bubblingMouseEvents": true, "color": "#f6c999ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6c999ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d04d4b312e951cafac42a3553a84011c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a04827032ba119d1c4e985f4831e473 = $(`<div id="html_6a04827032ba119d1c4e985f4831e473" style="width: 100.0%; height: 100.0%;"><b>PPVD_2281396</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1074.0<br>Offset: +17.16%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_d04d4b312e951cafac42a3553a84011c.setContent(html_6a04827032ba119d1c4e985f4831e473);
+            
+        
+
+        circle_marker_b117a3978e7dfde92e245f90fabfc704.bindPopup(popup_d04d4b312e951cafac42a3553a84011c)
+        ;
+
+        
+    
+    
+            var circle_marker_1bc56a3218d6a25ea06b9f6ae1b2e7c0 = L.circleMarker(
+                [51.239614, 6.745062],
+                {"bubblingMouseEvents": true, "color": "#f0a881ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0a881ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_ceeff250310dc88312e95ccfa9300d0b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9923211b6610c97618487068b3cf258c = $(`<div id="html_9923211b6610c97618487068b3cf258c" style="width: 100.0%; height: 100.0%;"><b>PPVD_2443450</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1074.9<br>Offset: +17.26%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_ceeff250310dc88312e95ccfa9300d0b.setContent(html_9923211b6610c97618487068b3cf258c);
+            
+        
+
+        circle_marker_1bc56a3218d6a25ea06b9f6ae1b2e7c0.bindPopup(popup_ceeff250310dc88312e95ccfa9300d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_b289e71a5defe4e15eb56d1aff95b355 = L.circleMarker(
+                [51.273449, 6.738329],
+                {"bubblingMouseEvents": true, "color": "#eef6bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eef6bfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_07a1faa5cde50848dc824caf96d695c8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3fa126ed7cf9b40275b987929256e39a = $(`<div id="html_3fa126ed7cf9b40275b987929256e39a" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446043</b><br>Cadastre kwh/kWp: 916.7<br>Our kwh/kWp: 1072.2<br>Offset: +16.96%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_07a1faa5cde50848dc824caf96d695c8.setContent(html_3fa126ed7cf9b40275b987929256e39a);
+            
+        
+
+        circle_marker_b289e71a5defe4e15eb56d1aff95b355.bindPopup(popup_07a1faa5cde50848dc824caf96d695c8)
+        ;
+
+        
+    
+    
+            var circle_marker_b4fe7d8f650bb62ac15a47d8ba72d2ab = L.circleMarker(
+                [51.215652, 6.784908],
+                {"bubblingMouseEvents": true, "color": "#f3ba8eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3ba8eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a0c6a33388fb8858fba712ec5c324e2a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dcf7866317220f127086089815ac7327 = $(`<div id="html_dcf7866317220f127086089815ac7327" style="width: 100.0%; height: 100.0%;"><b>PPVD_2571403</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1073.5<br>Offset: +17.20%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a0c6a33388fb8858fba712ec5c324e2a.setContent(html_dcf7866317220f127086089815ac7327);
+            
+        
+
+        circle_marker_b4fe7d8f650bb62ac15a47d8ba72d2ab.bindPopup(popup_a0c6a33388fb8858fba712ec5c324e2a)
+        ;
+
+        
+    
+    
+            var circle_marker_9fb0e81ef9bea5cc49a1dcc89226f8f2 = L.circleMarker(
+                [51.210899, 6.771079],
+                {"bubblingMouseEvents": true, "color": "#f3b68bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3b68bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_c1bef357f6bc4d2663a704080d4ed0b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92ba15cccb7f215381ba61b421778880 = $(`<div id="html_92ba15cccb7f215381ba61b421778880" style="width: 100.0%; height: 100.0%;"><b>PPVD_2372657</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1073.6<br>Offset: +17.22%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_c1bef357f6bc4d2663a704080d4ed0b6.setContent(html_92ba15cccb7f215381ba61b421778880);
+            
+        
+
+        circle_marker_9fb0e81ef9bea5cc49a1dcc89226f8f2.bindPopup(popup_c1bef357f6bc4d2663a704080d4ed0b6)
+        ;
+
+        
+    
+    
+            var circle_marker_cb029fa1ef2d43aea1ecb22b28601cfd = L.circleMarker(
+                [51.187138, 6.819589],
+                {"bubblingMouseEvents": true, "color": "#ec8d6eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ec8d6eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_320860a392f022941adf78424dc10fb6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac19770336cfed20175bf3fb961378e3 = $(`<div id="html_ac19770336cfed20175bf3fb961378e3" style="width: 100.0%; height: 100.0%;"><b>PPVD_2324960</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.6<br>Offset: +17.33%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_320860a392f022941adf78424dc10fb6.setContent(html_ac19770336cfed20175bf3fb961378e3);
+            
+        
+
+        circle_marker_cb029fa1ef2d43aea1ecb22b28601cfd.bindPopup(popup_320860a392f022941adf78424dc10fb6)
+        ;
+
+        
+    
+    
+            var circle_marker_e564fb55cec285b84ba97a67ba6f8ca5 = L.circleMarker(
+                [51.208286, 6.761995],
+                {"bubblingMouseEvents": true, "color": "#ea8367ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8367ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_b0924f070a22bab328f7e535bbd4d7e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69475ef9c5a293f3e00c1ec9e8d8b8d8 = $(`<div id="html_69475ef9c5a293f3e00c1ec9e8d8b8d8" style="width: 100.0%; height: 100.0%;"><b>PPVD_2375881</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.9<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_b0924f070a22bab328f7e535bbd4d7e3.setContent(html_69475ef9c5a293f3e00c1ec9e8d8b8d8);
+            
+        
+
+        circle_marker_e564fb55cec285b84ba97a67ba6f8ca5.bindPopup(popup_b0924f070a22bab328f7e535bbd4d7e3)
+        ;
+
+        
+    
+    
+            var circle_marker_44d8ed9f1de1d572f040de84d2da6138 = L.circleMarker(
+                [51.231641, 6.714181],
+                {"bubblingMouseEvents": true, "color": "#ea8468ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8468ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_9fcfe6b6782332fa80ab2e462f0c345c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8772bd44f64d57aff100c43d75e3e2b = $(`<div id="html_c8772bd44f64d57aff100c43d75e3e2b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2415393</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.8<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_9fcfe6b6782332fa80ab2e462f0c345c.setContent(html_c8772bd44f64d57aff100c43d75e3e2b);
+            
+        
+
+        circle_marker_44d8ed9f1de1d572f040de84d2da6138.bindPopup(popup_9fcfe6b6782332fa80ab2e462f0c345c)
+        ;
+
+        
+    
+    
+            var circle_marker_c30a3e45b18e844448a05b71159a4793 = L.circleMarker(
+                [51.21412, 6.77177],
+                {"bubblingMouseEvents": true, "color": "#ec8e6fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ec8e6fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a73e77841ab5f57fecb23884e2ab546e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1cc02072ea3228333ec9c6c6e380cefe = $(`<div id="html_1cc02072ea3228333ec9c6c6e380cefe" style="width: 100.0%; height: 100.0%;"><b>PPVD_2374094</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.6<br>Offset: +17.33%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a73e77841ab5f57fecb23884e2ab546e.setContent(html_1cc02072ea3228333ec9c6c6e380cefe);
+            
+        
+
+        circle_marker_c30a3e45b18e844448a05b71159a4793.bindPopup(popup_a73e77841ab5f57fecb23884e2ab546e)
+        ;
+
+        
+    
+    
+            var circle_marker_b8f1a88563f4aa4ff601f72110a18a12 = L.circleMarker(
+                [51.207419, 6.73441],
+                {"bubblingMouseEvents": true, "color": "#98c3bdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98c3bdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_ad11ce8bba9b710d9f8b991732fe8b5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9e6ac1c9679c88d225a7567e90ffa51a = $(`<div id="html_9e6ac1c9679c88d225a7567e90ffa51a" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446236</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1068.8<br>Offset: +16.70%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_ad11ce8bba9b710d9f8b991732fe8b5b.setContent(html_9e6ac1c9679c88d225a7567e90ffa51a);
+            
+        
+
+        circle_marker_b8f1a88563f4aa4ff601f72110a18a12.bindPopup(popup_ad11ce8bba9b710d9f8b991732fe8b5b)
+        ;
+
+        
+    
+    
+            var circle_marker_f9596e422f48d4dec49cff9970c3e887 = L.circleMarker(
+                [51.209152, 6.839522],
+                {"bubblingMouseEvents": true, "color": "#eb8a6cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eb8a6cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_9b6496210090742ef6bd38d0e5edccb4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0623494c34e479c3cb5c460aef56f3d5 = $(`<div id="html_0623494c34e479c3cb5c460aef56f3d5" style="width: 100.0%; height: 100.0%;"><b>PPVD_2521968</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.7<br>Offset: +17.34%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_9b6496210090742ef6bd38d0e5edccb4.setContent(html_0623494c34e479c3cb5c460aef56f3d5);
+            
+        
+
+        circle_marker_f9596e422f48d4dec49cff9970c3e887.bindPopup(popup_9b6496210090742ef6bd38d0e5edccb4)
+        ;
+
+        
+    
+    
+            var circle_marker_f88652cd3d24f882a9234e14eb6cb8b4 = L.circleMarker(
+                [51.296558, 6.739285],
+                {"bubblingMouseEvents": true, "color": "#f2b188ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b188ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_1f59d42680ae03e0de9f76edfcdd7938 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0e087c5629d07e9f48844b55866c54f7 = $(`<div id="html_0e087c5629d07e9f48844b55866c54f7" style="width: 100.0%; height: 100.0%;"><b>PPVD_2406631</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1073.7<br>Offset: +17.23%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_1f59d42680ae03e0de9f76edfcdd7938.setContent(html_0e087c5629d07e9f48844b55866c54f7);
+            
+        
+
+        circle_marker_f88652cd3d24f882a9234e14eb6cb8b4.bindPopup(popup_1f59d42680ae03e0de9f76edfcdd7938)
+        ;
+
+        
+    
+    
+            var circle_marker_7f5e36e7a82b5fc24793c47626e4592c = L.circleMarker(
+                [51.231321, 6.743211],
+                {"bubblingMouseEvents": true, "color": "#e8775eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e8775eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_cbf2a9322982923ffea5e40340c307c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cfcb2a83246724e7164417ec113b5bf8 = $(`<div id="html_cfcb2a83246724e7164417ec113b5bf8" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446205</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1075.2<br>Offset: +17.39%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_cbf2a9322982923ffea5e40340c307c6.setContent(html_cfcb2a83246724e7164417ec113b5bf8);
+            
+        
+
+        circle_marker_7f5e36e7a82b5fc24793c47626e4592c.bindPopup(popup_cbf2a9322982923ffea5e40340c307c6)
+        ;
+
+        
+    
+    
+            var circle_marker_63e8e7e9d34f2e7db94ddfd712587467 = L.circleMarker(
+                [51.265125, 6.806974],
+                {"bubblingMouseEvents": true, "color": "#ec9071ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ec9071ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_1e8444c34cc814f4e4125d210d5b1fda = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e712b9e9a9345d2d401b1aa5b427c3b7 = $(`<div id="html_e712b9e9a9345d2d401b1aa5b427c3b7" style="width: 100.0%; height: 100.0%;"><b>PPVD_2322190</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.5<br>Offset: +17.32%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_1e8444c34cc814f4e4125d210d5b1fda.setContent(html_e712b9e9a9345d2d401b1aa5b427c3b7);
+            
+        
+
+        circle_marker_63e8e7e9d34f2e7db94ddfd712587467.bindPopup(popup_1e8444c34cc814f4e4125d210d5b1fda)
+        ;
+
+        
+    
+    
+            var circle_marker_69a9b2d242545efc2177f97206216cde = L.circleMarker(
+                [51.198638, 6.782982],
+                {"bubblingMouseEvents": true, "color": "#f5c394ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5c394ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_c162b0272843bb16fc70f14fd028df55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55e624d6b18e1c7be2eae59a3223ee47 = $(`<div id="html_55e624d6b18e1c7be2eae59a3223ee47" style="width: 100.0%; height: 100.0%;"><b>PPVD_2370050</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1073.2<br>Offset: +17.18%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_c162b0272843bb16fc70f14fd028df55.setContent(html_55e624d6b18e1c7be2eae59a3223ee47);
+            
+        
+
+        circle_marker_69a9b2d242545efc2177f97206216cde.bindPopup(popup_c162b0272843bb16fc70f14fd028df55)
+        ;
+
+        
+    
+    
+            var circle_marker_c3f3dc875db15f3d09d0e436f2156860 = L.circleMarker(
+                [51.207424, 6.735031],
+                {"bubblingMouseEvents": true, "color": "#e3efbfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e3efbfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a67de257c1ecf80faae9a44df7cbbcdb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_329bb64c3084da11643ea6e03e4e724e = $(`<div id="html_329bb64c3084da11643ea6e03e4e724e" style="width: 100.0%; height: 100.0%;"><b>PPVD_2444493</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1070.9<br>Offset: +16.93%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a67de257c1ecf80faae9a44df7cbbcdb.setContent(html_329bb64c3084da11643ea6e03e4e724e);
+            
+        
+
+        circle_marker_c3f3dc875db15f3d09d0e436f2156860.bindPopup(popup_a67de257c1ecf80faae9a44df7cbbcdb)
+        ;
+
+        
+    
+    
+            var circle_marker_309c4b46de99c424581e89785e4f9fb8 = L.circleMarker(
+                [51.281059, 6.793478],
+                {"bubblingMouseEvents": true, "color": "#e56854ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e56854ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_e9914cc34561ac8e3e34d09dbcbdaea4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_88226cc168e1d76d4fb26b02206ef287 = $(`<div id="html_88226cc168e1d76d4fb26b02206ef287" style="width: 100.0%; height: 100.0%;"><b>PPVD_2578998</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1075.6<br>Offset: +17.43%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_e9914cc34561ac8e3e34d09dbcbdaea4.setContent(html_88226cc168e1d76d4fb26b02206ef287);
+            
+        
+
+        circle_marker_309c4b46de99c424581e89785e4f9fb8.bindPopup(popup_e9914cc34561ac8e3e34d09dbcbdaea4)
+        ;
+
+        
+    
+    
+            var circle_marker_238f978a24e5ad5783d6c4838cdaa50a = L.circleMarker(
+                [51.231702, 6.751208],
+                {"bubblingMouseEvents": true, "color": "#c8dfbeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c8dfbeff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_44f33bd4e1c237ad5db0cd2e310f8476 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e3bce4e72d3a146ec669eb3381cc017c = $(`<div id="html_e3bce4e72d3a146ec669eb3381cc017c" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446941</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1070.2<br>Offset: +16.84%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_44f33bd4e1c237ad5db0cd2e310f8476.setContent(html_e3bce4e72d3a146ec669eb3381cc017c);
+            
+        
+
+        circle_marker_238f978a24e5ad5783d6c4838cdaa50a.bindPopup(popup_44f33bd4e1c237ad5db0cd2e310f8476)
+        ;
+
+        
+    
+    
+            var circle_marker_916104e1049c8cf98e363243f714f3f4 = L.circleMarker(
+                [51.230411, 6.781965],
+                {"bubblingMouseEvents": true, "color": "#e7745dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e7745dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_c7e854b224d77c68072f3721d53e4f89 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e5ecd187798d1ac6e93b658285a509a5 = $(`<div id="html_e5ecd187798d1ac6e93b658285a509a5" style="width: 100.0%; height: 100.0%;"><b>PPVD_2370423</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1075.2<br>Offset: +17.40%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_c7e854b224d77c68072f3721d53e4f89.setContent(html_e5ecd187798d1ac6e93b658285a509a5);
+            
+        
+
+        circle_marker_916104e1049c8cf98e363243f714f3f4.bindPopup(popup_c7e854b224d77c68072f3721d53e4f89)
+        ;
+
+        
+    
+    
+            var circle_marker_44e890a03793ec03c69ea4517a3984a2 = L.circleMarker(
+                [51.215376, 6.783431],
+                {"bubblingMouseEvents": true, "color": "#ec8e6fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ec8e6fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_f87b0cbf623aff3141b760c6c18fdde6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a87f2189d8e5b9b3dc6f95b302233cb1 = $(`<div id="html_a87f2189d8e5b9b3dc6f95b302233cb1" style="width: 100.0%; height: 100.0%;"><b>PPVD_2345867</b><br>Cadastre kwh/kWp: 915.9<br>Our kwh/kWp: 1074.6<br>Offset: +17.33%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_f87b0cbf623aff3141b760c6c18fdde6.setContent(html_a87f2189d8e5b9b3dc6f95b302233cb1);
+            
+        
+
+        circle_marker_44e890a03793ec03c69ea4517a3984a2.bindPopup(popup_f87b0cbf623aff3141b760c6c18fdde6)
+        ;
+
+        
+    
+    
+            var circle_marker_e361fbe9d6cca3f3df63aa3c190e1b3f = L.circleMarker(
+                [51.256766, 6.761203],
+                {"bubblingMouseEvents": true, "color": "#f1aa83ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1aa83ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d60ef89487c3afba12cd8712209e1d9e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ca19943bc54ae68eef70acabe8a4fe36 = $(`<div id="html_ca19943bc54ae68eef70acabe8a4fe36" style="width: 100.0%; height: 100.0%;"><b>PPVD_2377689</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1072.9<br>Offset: +17.25%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_d60ef89487c3afba12cd8712209e1d9e.setContent(html_ca19943bc54ae68eef70acabe8a4fe36);
+            
+        
+
+        circle_marker_e361fbe9d6cca3f3df63aa3c190e1b3f.bindPopup(popup_d60ef89487c3afba12cd8712209e1d9e)
+        ;
+
+        
+    
+    
+            var circle_marker_d26d673e3c6029ccc91ded6286e3918c = L.circleMarker(
+                [51.231705, 6.750533],
+                {"bubblingMouseEvents": true, "color": "#f2b389ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b389ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_507d44479625937394df17fb77d7f7cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_91062540a90a96cee0f768027d237ead = $(`<div id="html_91062540a90a96cee0f768027d237ead" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446234</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1072.7<br>Offset: +17.22%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_507d44479625937394df17fb77d7f7cb.setContent(html_91062540a90a96cee0f768027d237ead);
+            
+        
+
+        circle_marker_d26d673e3c6029ccc91ded6286e3918c.bindPopup(popup_507d44479625937394df17fb77d7f7cb)
+        ;
+
+        
+    
+    
+            var circle_marker_9f50fae457b110949fb3cea1fa2faf04 = L.circleMarker(
+                [51.190629, 6.764795],
+                {"bubblingMouseEvents": true, "color": "#edf5bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#edf5bfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_bac9de6dbea514862824137ce0687cf1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4e9485ded477fa3b9505b907bdd7d99 = $(`<div id="html_a4e9485ded477fa3b9505b907bdd7d99" style="width: 100.0%; height: 100.0%;"><b>PPVD_2369930</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1070.2<br>Offset: +16.95%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_bac9de6dbea514862824137ce0687cf1.setContent(html_a4e9485ded477fa3b9505b907bdd7d99);
+            
+        
+
+        circle_marker_9f50fae457b110949fb3cea1fa2faf04.bindPopup(popup_bac9de6dbea514862824137ce0687cf1)
+        ;
+
+        
+    
+    
+            var circle_marker_69ba1ad3ba95df3745ff529ed4462b78 = L.circleMarker(
+                [51.21127, 6.788589],
+                {"bubblingMouseEvents": true, "color": "#e97e64ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e97e64ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_131ec25efe60511783faaa0b2f087ae7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_09029575443fb4f90c85a8d9cad30e1b = $(`<div id="html_09029575443fb4f90c85a8d9cad30e1b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2585765</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1074.0<br>Offset: +17.37%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_131ec25efe60511783faaa0b2f087ae7.setContent(html_09029575443fb4f90c85a8d9cad30e1b);
+            
+        
+
+        circle_marker_69ba1ad3ba95df3745ff529ed4462b78.bindPopup(popup_131ec25efe60511783faaa0b2f087ae7)
+        ;
+
+        
+    
+    
+            var circle_marker_d78ff7f8c99200b528dc66f6cb455ba0 = L.circleMarker(
+                [51.242049, 6.745698],
+                {"bubblingMouseEvents": true, "color": "#f8d29fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8d29fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_3e4c26aa5fe2afd43ec48b80ce22ede1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_43c9a72515c8a62a8a3b249eebf25fcf = $(`<div id="html_43c9a72515c8a62a8a3b249eebf25fcf" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446529</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1071.9<br>Offset: +17.14%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_3e4c26aa5fe2afd43ec48b80ce22ede1.setContent(html_43c9a72515c8a62a8a3b249eebf25fcf);
+            
+        
+
+        circle_marker_d78ff7f8c99200b528dc66f6cb455ba0.bindPopup(popup_3e4c26aa5fe2afd43ec48b80ce22ede1)
+        ;
+
+        
+    
+    
+            var circle_marker_645bfa9f974f3440b983a221e020e29a = L.circleMarker(
+                [51.204315, 6.739602],
+                {"bubblingMouseEvents": true, "color": "#e56552ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e56552ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_568aa7851ca82d6660dca8f0d3da2287 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_095326e07026ad78857797c773b10263 = $(`<div id="html_095326e07026ad78857797c773b10263" style="width: 100.0%; height: 100.0%;"><b>PPVD_2445986</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1074.7<br>Offset: +17.44%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_568aa7851ca82d6660dca8f0d3da2287.setContent(html_095326e07026ad78857797c773b10263);
+            
+        
+
+        circle_marker_645bfa9f974f3440b983a221e020e29a.bindPopup(popup_568aa7851ca82d6660dca8f0d3da2287)
+        ;
+
+        
+    
+    
+            var circle_marker_191a41bbc0f16160cfe992bd0fc89db5 = L.circleMarker(
+                [51.337446, 6.786131],
+                {"bubblingMouseEvents": true, "color": "#e7735cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e7735cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a2351180adb9dcbf145e606b4186757e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4ffee1e0dc8c0e979c87859f610bb93b = $(`<div id="html_4ffee1e0dc8c0e979c87859f610bb93b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2532462</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1074.3<br>Offset: +17.40%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_a2351180adb9dcbf145e606b4186757e.setContent(html_4ffee1e0dc8c0e979c87859f610bb93b);
+            
+        
+
+        circle_marker_191a41bbc0f16160cfe992bd0fc89db5.bindPopup(popup_a2351180adb9dcbf145e606b4186757e)
+        ;
+
+        
+    
+    
+            var circle_marker_832dd9f45d693cf1b286963f4551d534 = L.circleMarker(
+                [51.211718, 6.789237],
+                {"bubblingMouseEvents": true, "color": "#e66b56ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e66b56ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2036563d8ae4291a9c0cccb01fa41efe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d00032b6f30b5c71e44f198f1b8e8c8b = $(`<div id="html_d00032b6f30b5c71e44f198f1b8e8c8b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2584648</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1074.5<br>Offset: +17.43%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_2036563d8ae4291a9c0cccb01fa41efe.setContent(html_d00032b6f30b5c71e44f198f1b8e8c8b);
+            
+        
+
+        circle_marker_832dd9f45d693cf1b286963f4551d534.bindPopup(popup_2036563d8ae4291a9c0cccb01fa41efe)
+        ;
+
+        
+    
+    
+            var circle_marker_dc0d5f9462d5ce51f55efcf0ef3f4b93 = L.circleMarker(
+                [51.210355, 6.801103],
+                {"bubblingMouseEvents": true, "color": "#f1ab83ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1ab83ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_4dbce1c17604ce85eeffb419042462bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1f9056b1b91514343772e74aca318a6d = $(`<div id="html_1f9056b1b91514343772e74aca318a6d" style="width: 100.0%; height: 100.0%;"><b>PPVD_2586307</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1072.9<br>Offset: +17.25%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_4dbce1c17604ce85eeffb419042462bf.setContent(html_1f9056b1b91514343772e74aca318a6d);
+            
+        
+
+        circle_marker_dc0d5f9462d5ce51f55efcf0ef3f4b93.bindPopup(popup_4dbce1c17604ce85eeffb419042462bf)
+        ;
+
+        
+    
+    
+            var circle_marker_bc484ec62e40abbfa4372ae41b1ecb75 = L.circleMarker(
+                [51.211049, 6.767431],
+                {"bubblingMouseEvents": true, "color": "#f2b389ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f2b389ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_0260731abdcaeb293256bea711e8dd29 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6148ab81db2c8f8c82057030ab2af57c = $(`<div id="html_6148ab81db2c8f8c82057030ab2af57c" style="width: 100.0%; height: 100.0%;"><b>PPVD_2374312</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1072.7<br>Offset: +17.22%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_0260731abdcaeb293256bea711e8dd29.setContent(html_6148ab81db2c8f8c82057030ab2af57c);
+            
+        
+
+        circle_marker_bc484ec62e40abbfa4372ae41b1ecb75.bindPopup(popup_0260731abdcaeb293256bea711e8dd29)
+        ;
+
+        
+    
+    
+            var circle_marker_002df00b278315993dda6a9dc80ffc01 = L.circleMarker(
+                [51.223297, 6.777648],
+                {"bubblingMouseEvents": true, "color": "#f8d29fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8d29fff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2166d4fc5ee571afb500ee8e3fd744c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03184df5a2cc216f87b222e5e1bebf8b = $(`<div id="html_03184df5a2cc216f87b222e5e1bebf8b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2376034</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1071.9<br>Offset: +17.14%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_2166d4fc5ee571afb500ee8e3fd744c0.setContent(html_03184df5a2cc216f87b222e5e1bebf8b);
+            
+        
+
+        circle_marker_002df00b278315993dda6a9dc80ffc01.bindPopup(popup_2166d4fc5ee571afb500ee8e3fd744c0)
+        ;
+
+        
+    
+    
+            var circle_marker_18052d0b5b5c01e4b09044cc92afdd6d = L.circleMarker(
+                [51.230858, 6.703317],
+                {"bubblingMouseEvents": true, "color": "#91bfbdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91bfbdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2276fe8bea6f0c2da348959a23ecbc24 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84544406e419370421b7efe3c7d26288 = $(`<div id="html_84544406e419370421b7efe3c7d26288" style="width: 100.0%; height: 100.0%;"><b>PPVD_2415950</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1067.7<br>Offset: +16.68%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_2276fe8bea6f0c2da348959a23ecbc24.setContent(html_84544406e419370421b7efe3c7d26288);
+            
+        
+
+        circle_marker_18052d0b5b5c01e4b09044cc92afdd6d.bindPopup(popup_2276fe8bea6f0c2da348959a23ecbc24)
+        ;
+
+        
+    
+    
+            var circle_marker_81930f612a96bfaa0aa67b363c2422c7 = L.circleMarker(
+                [51.217331, 6.783382],
+                {"bubblingMouseEvents": true, "color": "#eaf3bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaf3bfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_f3f6c33fb46d95f7335837f4aea9c2ed = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dea3f28da5bdb4e86ea28479c08f1d90 = $(`<div id="html_dea3f28da5bdb4e86ea28479c08f1d90" style="width: 100.0%; height: 100.0%;"><b>PPVD_2370520</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1070.1<br>Offset: +16.95%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_f3f6c33fb46d95f7335837f4aea9c2ed.setContent(html_dea3f28da5bdb4e86ea28479c08f1d90);
+            
+        
+
+        circle_marker_81930f612a96bfaa0aa67b363c2422c7.bindPopup(popup_f3f6c33fb46d95f7335837f4aea9c2ed)
+        ;
+
+        
+    
+    
+            var circle_marker_303eb60b82ebced6bcf41016918e77d1 = L.circleMarker(
+                [51.214196, 6.791529],
+                {"bubblingMouseEvents": true, "color": "#ed9574ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ed9574ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_ed0685b6634b7fa49e502bb5dbeeb4ec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a41d0cbfaaa43aa4972281d43115828 = $(`<div id="html_2a41d0cbfaaa43aa4972281d43115828" style="width: 100.0%; height: 100.0%;"><b>PPVD_2584861</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1073.5<br>Offset: +17.31%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_ed0685b6634b7fa49e502bb5dbeeb4ec.setContent(html_2a41d0cbfaaa43aa4972281d43115828);
+            
+        
+
+        circle_marker_303eb60b82ebced6bcf41016918e77d1.bindPopup(popup_ed0685b6634b7fa49e502bb5dbeeb4ec)
+        ;
+
+        
+    
+    
+            var circle_marker_b923bda66bfe0135ebb5ecaae5d83737 = L.circleMarker(
+                [51.212651, 6.80735],
+                {"bubblingMouseEvents": true, "color": "#ea8367ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8367ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_bc2f1b4d36933092b89bd16902c15b6b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e35f64cd37c36f3496824a630a509690 = $(`<div id="html_e35f64cd37c36f3496824a630a509690" style="width: 100.0%; height: 100.0%;"><b>PPVD_2584868</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1073.9<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_bc2f1b4d36933092b89bd16902c15b6b.setContent(html_e35f64cd37c36f3496824a630a509690);
+            
+        
+
+        circle_marker_b923bda66bfe0135ebb5ecaae5d83737.bindPopup(popup_bc2f1b4d36933092b89bd16902c15b6b)
+        ;
+
+        
+    
+    
+            var circle_marker_89962cd95396e91ff91d28cd9daac5df = L.circleMarker(
+                [51.273409, 6.739206],
+                {"bubblingMouseEvents": true, "color": "#f6c898ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6c898ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_4b598da7127b3e96224ade6ebb95f3b0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eddaea6f54e626fde43aba64f0a4dc67 = $(`<div id="html_eddaea6f54e626fde43aba64f0a4dc67" style="width: 100.0%; height: 100.0%;"><b>PPVD_2448192</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1072.2<br>Offset: +17.17%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_4b598da7127b3e96224ade6ebb95f3b0.setContent(html_eddaea6f54e626fde43aba64f0a4dc67);
+            
+        
+
+        circle_marker_89962cd95396e91ff91d28cd9daac5df.bindPopup(popup_4b598da7127b3e96224ade6ebb95f3b0)
+        ;
+
+        
+    
+    
+            var circle_marker_4c84c79766e6080ad0eeee44565195c6 = L.circleMarker(
+                [51.231743, 6.757295],
+                {"bubblingMouseEvents": true, "color": "#ea8267ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8267ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_e45d229827e6867a957d2c0fd57122d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7f505e466af24af083030539b0e6e0e0 = $(`<div id="html_7f505e466af24af083030539b0e6e0e0" style="width: 100.0%; height: 100.0%;"><b>PPVD_2446527</b><br>Cadastre kwh/kWp: 915.1<br>Our kwh/kWp: 1073.9<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_e45d229827e6867a957d2c0fd57122d3.setContent(html_7f505e466af24af083030539b0e6e0e0);
+            
+        
+
+        circle_marker_4c84c79766e6080ad0eeee44565195c6.bindPopup(popup_e45d229827e6867a957d2c0fd57122d3)
+        ;
+
+        
+    
+    
+            var circle_marker_3b1409b7acb233237e43d3489f32be18 = L.circleMarker(
+                [51.21103, 6.767721],
+                {"bubblingMouseEvents": true, "color": "#ea8367ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8367ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_14a578fb0bfc9c33463c436a0d67bfc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cdc96109eebd9cab030a60dabda6a1b2 = $(`<div id="html_cdc96109eebd9cab030a60dabda6a1b2" style="width: 100.0%; height: 100.0%;"><b>PPVD_2375883</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.0<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_14a578fb0bfc9c33463c436a0d67bfc6.setContent(html_cdc96109eebd9cab030a60dabda6a1b2);
+            
+        
+
+        circle_marker_3b1409b7acb233237e43d3489f32be18.bindPopup(popup_14a578fb0bfc9c33463c436a0d67bfc6)
+        ;
+
+        
+    
+    
+            var circle_marker_ff6a5723fbfae75612fd5eafc36346b3 = L.circleMarker(
+                [51.199693, 6.780319],
+                {"bubblingMouseEvents": true, "color": "#f6c898ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6c898ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d2a858521c256d171a51b9a1e90e7c86 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8dc5ae88efb72560c2f6de48d321e5b = $(`<div id="html_c8dc5ae88efb72560c2f6de48d321e5b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2372414</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1071.2<br>Offset: +17.16%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_d2a858521c256d171a51b9a1e90e7c86.setContent(html_c8dc5ae88efb72560c2f6de48d321e5b);
+            
+        
+
+        circle_marker_ff6a5723fbfae75612fd5eafc36346b3.bindPopup(popup_d2a858521c256d171a51b9a1e90e7c86)
+        ;
+
+        
+    
+    
+            var circle_marker_e56499a2cf1d407147b7200acdbfbcdc = L.circleMarker(
+                [51.210895, 6.771262],
+                {"bubblingMouseEvents": true, "color": "#ea8367ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8367ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_53eda46c228579495f38aaa2dff8e7c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_38e8fe9797e2fb79a8e867592b371425 = $(`<div id="html_38e8fe9797e2fb79a8e867592b371425" style="width: 100.0%; height: 100.0%;"><b>PPVD_2376712</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.0<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_53eda46c228579495f38aaa2dff8e7c3.setContent(html_38e8fe9797e2fb79a8e867592b371425);
+            
+        
+
+        circle_marker_e56499a2cf1d407147b7200acdbfbcdc.bindPopup(popup_53eda46c228579495f38aaa2dff8e7c3)
+        ;
+
+        
+    
+    
+            var circle_marker_f5ef53072840584b42272f65735282a3 = L.circleMarker(
+                [51.214185, 6.792149],
+                {"bubblingMouseEvents": true, "color": "#e77059ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e77059ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_1dc88eda41ae7845e4d6e58c511cc343 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b38b2a585bcda51672852b93ba9fa43 = $(`<div id="html_8b38b2a585bcda51672852b93ba9fa43" style="width: 100.0%; height: 100.0%;"><b>PPVD_2579617</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.5<br>Offset: +17.41%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_1dc88eda41ae7845e4d6e58c511cc343.setContent(html_8b38b2a585bcda51672852b93ba9fa43);
+            
+        
+
+        circle_marker_f5ef53072840584b42272f65735282a3.bindPopup(popup_1dc88eda41ae7845e4d6e58c511cc343)
+        ;
+
+        
+    
+    
+            var circle_marker_32f3da1512c708e66fd423e27bdeced0 = L.circleMarker(
+                [51.217909, 6.788331],
+                {"bubblingMouseEvents": true, "color": "#f3ba8eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f3ba8eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_b70dd57af2bfa0366ad9cf07159e9c20 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_33799eb479c65df5af4dc9b94d047ac7 = $(`<div id="html_33799eb479c65df5af4dc9b94d047ac7" style="width: 100.0%; height: 100.0%;"><b>PPVD_2583694</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1071.6<br>Offset: +17.20%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_b70dd57af2bfa0366ad9cf07159e9c20.setContent(html_33799eb479c65df5af4dc9b94d047ac7);
+            
+        
+
+        circle_marker_32f3da1512c708e66fd423e27bdeced0.bindPopup(popup_b70dd57af2bfa0366ad9cf07159e9c20)
+        ;
+
+        
+    
+    
+            var circle_marker_64a3d2bab12672c50a359b0851ba12ef = L.circleMarker(
+                [51.209135, 6.839265],
+                {"bubblingMouseEvents": true, "color": "#e25849ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e25849ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_2b94480836964e1edb0bd2d829005948 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_14c9fc78adb1ad203bf0ff6000454837 = $(`<div id="html_14c9fc78adb1ad203bf0ff6000454837" style="width: 100.0%; height: 100.0%;"><b>PPVD_2517153</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1074.1<br>Offset: +17.48%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_2b94480836964e1edb0bd2d829005948.setContent(html_14c9fc78adb1ad203bf0ff6000454837);
+            
+        
+
+        circle_marker_64a3d2bab12672c50a359b0851ba12ef.bindPopup(popup_2b94480836964e1edb0bd2d829005948)
+        ;
+
+        
+    
+    
+            var circle_marker_071bda246970b86cf992a6abde432b5d = L.circleMarker(
+                [51.237974, 6.782311],
+                {"bubblingMouseEvents": true, "color": "#f4c092ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f4c092ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_279bbd93fd7e951ba512a71af38af0ec = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6a05cc2be086522431ff98a6b5dc00c = $(`<div id="html_f6a05cc2be086522431ff98a6b5dc00c" style="width: 100.0%; height: 100.0%;"><b>PPVD_2372961</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1071.4<br>Offset: +17.19%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_279bbd93fd7e951ba512a71af38af0ec.setContent(html_f6a05cc2be086522431ff98a6b5dc00c);
+            
+        
+
+        circle_marker_071bda246970b86cf992a6abde432b5d.bindPopup(popup_279bbd93fd7e951ba512a71af38af0ec)
+        ;
+
+        
+    
+    
+            var circle_marker_68df76dcdefc825344124455de1b26e3 = L.circleMarker(
+                [51.212596, 6.799294],
+                {"bubblingMouseEvents": true, "color": "#eb8c6eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eb8c6eff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_86d3cc56d496a9b0f8f85dca0392bf4c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_edb2c9826ec97516b4617d2211790984 = $(`<div id="html_edb2c9826ec97516b4617d2211790984" style="width: 100.0%; height: 100.0%;"><b>PPVD_2580633</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1072.7<br>Offset: +17.33%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_86d3cc56d496a9b0f8f85dca0392bf4c.setContent(html_edb2c9826ec97516b4617d2211790984);
+            
+        
+
+        circle_marker_68df76dcdefc825344124455de1b26e3.bindPopup(popup_86d3cc56d496a9b0f8f85dca0392bf4c)
+        ;
+
+        
+    
+    
+            var circle_marker_fe697cad11699488246f07821c735fb5 = L.circleMarker(
+                [51.337726, 6.78482],
+                {"bubblingMouseEvents": true, "color": "#e45f4dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e45f4dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a4bc79c9e882254b55466b7808eabed7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2d8f9e7b16624612ab47cd7d42e1b5ae = $(`<div id="html_2d8f9e7b16624612ab47cd7d42e1b5ae" style="width: 100.0%; height: 100.0%;"><b>PPVD_2532333</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.9<br>Offset: +17.46%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_a4bc79c9e882254b55466b7808eabed7.setContent(html_2d8f9e7b16624612ab47cd7d42e1b5ae);
+            
+        
+
+        circle_marker_fe697cad11699488246f07821c735fb5.bindPopup(popup_a4bc79c9e882254b55466b7808eabed7)
+        ;
+
+        
+    
+    
+            var circle_marker_2464483d2e21d4d2d4f3c718f64a1001 = L.circleMarker(
+                [51.189166, 6.833395],
+                {"bubblingMouseEvents": true, "color": "#db302cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#db302cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_cfd192ed1be13606d26cc15db4b9e2b4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f0f9bcbf0625eb22f61f244214dc4e4 = $(`<div id="html_0f0f9bcbf0625eb22f61f244214dc4e4" style="width: 100.0%; height: 100.0%;"><b>PPVD_2327491</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1075.1<br>Offset: +17.59%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_cfd192ed1be13606d26cc15db4b9e2b4.setContent(html_0f0f9bcbf0625eb22f61f244214dc4e4);
+            
+        
+
+        circle_marker_2464483d2e21d4d2d4f3c718f64a1001.bindPopup(popup_cfd192ed1be13606d26cc15db4b9e2b4)
+        ;
+
+        
+    
+    
+            var circle_marker_c66f5d32d5aa0fdb95b8236f671f5619 = L.circleMarker(
+                [51.226854, 6.808556],
+                {"bubblingMouseEvents": true, "color": "#d92222ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d92222ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_46d2172979fa52c2caf68543faf80628 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65d635df08d0363a212cbd456994fc1c = $(`<div id="html_65d635df08d0363a212cbd456994fc1c" style="width: 100.0%; height: 100.0%;"><b>PPVD_2323438</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1075.4<br>Offset: +17.63%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_46d2172979fa52c2caf68543faf80628.setContent(html_65d635df08d0363a212cbd456994fc1c);
+            
+        
+
+        circle_marker_c66f5d32d5aa0fdb95b8236f671f5619.bindPopup(popup_46d2172979fa52c2caf68543faf80628)
+        ;
+
+        
+    
+    
+            var circle_marker_1b7f98c5b8df0c31a3b8a9bfac873d6d = L.circleMarker(
+                [51.209114, 6.839015],
+                {"bubblingMouseEvents": true, "color": "#e25849ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e25849ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_157f28f1697e714aad3d7f395e692182 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d593e098006568c6711834a7ce323f9b = $(`<div id="html_d593e098006568c6711834a7ce323f9b" style="width: 100.0%; height: 100.0%;"><b>PPVD_2520737</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1074.1<br>Offset: +17.48%<br>Roof tilt (gradprz): 100</div>`)[0];
+                popup_157f28f1697e714aad3d7f395e692182.setContent(html_d593e098006568c6711834a7ce323f9b);
+            
+        
+
+        circle_marker_1b7f98c5b8df0c31a3b8a9bfac873d6d.bindPopup(popup_157f28f1697e714aad3d7f395e692182)
+        ;
+
+        
+    
+    
+            var circle_marker_6b8738c8ab402246b2892a14bb7631a3 = L.circleMarker(
+                [51.235978, 6.78918],
+                {"bubblingMouseEvents": true, "color": "#e7735bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e7735bff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a33c889b21a32e25e2fbc4f69a4c3c58 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44e1307b7d8bfbfc2b3c41c9bb0925b7 = $(`<div id="html_44e1307b7d8bfbfc2b3c41c9bb0925b7" style="width: 100.0%; height: 100.0%;"><b>PPVD_2536654</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.4<br>Offset: +17.40%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a33c889b21a32e25e2fbc4f69a4c3c58.setContent(html_44e1307b7d8bfbfc2b3c41c9bb0925b7);
+            
+        
+
+        circle_marker_6b8738c8ab402246b2892a14bb7631a3.bindPopup(popup_a33c889b21a32e25e2fbc4f69a4c3c58)
+        ;
+
+        
+    
+    
+            var circle_marker_664b1a74d5fd848d07655ac008b8713c = L.circleMarker(
+                [51.199678, 6.780698],
+                {"bubblingMouseEvents": true, "color": "#e77059ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e77059ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_f5d5e123f01b7f77f4790ef14667e509 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b0eaae6f77488380b0f99e02238bf455 = $(`<div id="html_b0eaae6f77488380b0f99e02238bf455" style="width: 100.0%; height: 100.0%;"><b>PPVD_2371307</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.5<br>Offset: +17.41%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_f5d5e123f01b7f77f4790ef14667e509.setContent(html_b0eaae6f77488380b0f99e02238bf455);
+            
+        
+
+        circle_marker_664b1a74d5fd848d07655ac008b8713c.bindPopup(popup_f5d5e123f01b7f77f4790ef14667e509)
+        ;
+
+        
+    
+    
+            var circle_marker_0b4e7c4e7cdadb8ee57d08bbc21ffb11 = L.circleMarker(
+                [51.21053, 6.775641],
+                {"bubblingMouseEvents": true, "color": "#fef6b9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fef6b9ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_4591698ac2c32dc3df82edf3cf9d3c84 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4fedd8663ce2075951205461145856c6 = $(`<div id="html_4fedd8663ce2075951205461145856c6" style="width: 100.0%; height: 100.0%;"><b>PPVD_2346430</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1070.0<br>Offset: +17.04%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_4591698ac2c32dc3df82edf3cf9d3c84.setContent(html_4fedd8663ce2075951205461145856c6);
+            
+        
+
+        circle_marker_0b4e7c4e7cdadb8ee57d08bbc21ffb11.bindPopup(popup_4591698ac2c32dc3df82edf3cf9d3c84)
+        ;
+
+        
+    
+    
+            var circle_marker_8f4b75887ab8e1429e00f57cfd33e2f7 = L.circleMarker(
+                [51.210431, 6.798502],
+                {"bubblingMouseEvents": true, "color": "#ee9977ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ee9977ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_7bc1e81edb1bf37565a2602a51f217e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1fa1c5f29e1eafc692774bb7be004772 = $(`<div id="html_1fa1c5f29e1eafc692774bb7be004772" style="width: 100.0%; height: 100.0%;"><b>PPVD_2581684</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1072.4<br>Offset: +17.30%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_7bc1e81edb1bf37565a2602a51f217e0.setContent(html_1fa1c5f29e1eafc692774bb7be004772);
+            
+        
+
+        circle_marker_8f4b75887ab8e1429e00f57cfd33e2f7.bindPopup(popup_7bc1e81edb1bf37565a2602a51f217e0)
+        ;
+
+        
+    
+    
+            var circle_marker_95d10ac7393d654e4348f44e51275dd3 = L.circleMarker(
+                [51.21094, 6.770132],
+                {"bubblingMouseEvents": true, "color": "#adcfbdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#adcfbdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_a97df74c28906fa3b1a0edd306819f54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ab9a3bc321cf551e6351edc1b69983d = $(`<div id="html_3ab9a3bc321cf551e6351edc1b69983d" style="width: 100.0%; height: 100.0%;"><b>PPVD_2371586</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1067.5<br>Offset: +16.76%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_a97df74c28906fa3b1a0edd306819f54.setContent(html_3ab9a3bc321cf551e6351edc1b69983d);
+            
+        
+
+        circle_marker_95d10ac7393d654e4348f44e51275dd3.bindPopup(popup_a97df74c28906fa3b1a0edd306819f54)
+        ;
+
+        
+    
+    
+            var circle_marker_fa1a89fbedded0b80b4645133c579e6d = L.circleMarker(
+                [51.235197, 6.791661],
+                {"bubblingMouseEvents": true, "color": "#ea8166ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8166ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_fc7c10230efa2df348cca860d770b354 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19a39adcec5d4db8a2e206703f9bdba1 = $(`<div id="html_19a39adcec5d4db8a2e206703f9bdba1" style="width: 100.0%; height: 100.0%;"><b>PPVD_2584674</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.0<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_fc7c10230efa2df348cca860d770b354.setContent(html_19a39adcec5d4db8a2e206703f9bdba1);
+            
+        
+
+        circle_marker_fa1a89fbedded0b80b4645133c579e6d.bindPopup(popup_fc7c10230efa2df348cca860d770b354)
+        ;
+
+        
+    
+    
+            var circle_marker_4e6a86ea93b11d4e2317d2cb118f00f0 = L.circleMarker(
+                [51.211453, 6.746835],
+                {"bubblingMouseEvents": true, "color": "#e56652ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e56652ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_977ece25d194cb19b3f01d4ce19c7cb1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_358ad59bf6bfc15f04ad242c1eab23e7 = $(`<div id="html_358ad59bf6bfc15f04ad242c1eab23e7" style="width: 100.0%; height: 100.0%;"><b>PPVD_2448200</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.7<br>Offset: +17.44%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_977ece25d194cb19b3f01d4ce19c7cb1.setContent(html_358ad59bf6bfc15f04ad242c1eab23e7);
+            
+        
+
+        circle_marker_4e6a86ea93b11d4e2317d2cb118f00f0.bindPopup(popup_977ece25d194cb19b3f01d4ce19c7cb1)
+        ;
+
+        
+    
+    
+            var circle_marker_8801925e1665377b216802186e6b35eb = L.circleMarker(
+                [51.210837, 6.772764],
+                {"bubblingMouseEvents": true, "color": "#ea8166ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ea8166ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_319171f58bd3a0f437fa45d58373f066 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc20f6f25750217d419541447428ff47 = $(`<div id="html_cc20f6f25750217d419541447428ff47" style="width: 100.0%; height: 100.0%;"><b>PPVD_2371601</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.0<br>Offset: +17.36%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_319171f58bd3a0f437fa45d58373f066.setContent(html_cc20f6f25750217d419541447428ff47);
+            
+        
+
+        circle_marker_8801925e1665377b216802186e6b35eb.bindPopup(popup_319171f58bd3a0f437fa45d58373f066)
+        ;
+
+        
+    
+    
+            var circle_marker_18bf2e6a7d58a3e87435456427b39f7e = L.circleMarker(
+                [51.256717, 6.760877],
+                {"bubblingMouseEvents": true, "color": "#fef6b8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fef6b8ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_54d24af720bc9c446d5d4ceff0d3007f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b1b47f1f0b6845c5252ca9d20f2fd4e0 = $(`<div id="html_b1b47f1f0b6845c5252ca9d20f2fd4e0" style="width: 100.0%; height: 100.0%;"><b>PPVD_2371225</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1070.0<br>Offset: +17.04%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_54d24af720bc9c446d5d4ceff0d3007f.setContent(html_b1b47f1f0b6845c5252ca9d20f2fd4e0);
+            
+        
+
+        circle_marker_18bf2e6a7d58a3e87435456427b39f7e.bindPopup(popup_54d24af720bc9c446d5d4ceff0d3007f)
+        ;
+
+        
+    
+    
+            var circle_marker_a9bb3831befea71260a505cd1e8f4969 = L.circleMarker(
+                [51.21183, 6.786147],
+                {"bubblingMouseEvents": true, "color": "#e45f4dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e45f4dff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_0e8948655e7debf9847ea71b1b9a40cc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8081c6203ceef40424b6e796f67a3c55 = $(`<div id="html_8081c6203ceef40424b6e796f67a3c55" style="width: 100.0%; height: 100.0%;"><b>PPVD_2554190</b><br>Cadastre kwh/kWp: 914.3<br>Our kwh/kWp: 1073.9<br>Offset: +17.46%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_0e8948655e7debf9847ea71b1b9a40cc.setContent(html_8081c6203ceef40424b6e796f67a3c55);
+            
+        
+
+        circle_marker_a9bb3831befea71260a505cd1e8f4969.bindPopup(popup_0e8948655e7debf9847ea71b1b9a40cc)
+        ;
+
+        
+    
+    
+            var circle_marker_fa112c56b3bce5034d88b039ad0d9b62 = L.circleMarker(
+                [51.219386, 6.822702],
+                {"bubblingMouseEvents": true, "color": "#dd3832ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dd3832ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_5fbdacfe3731e7866da0fe8b944e5245 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4679c148e9d9171f2a4f7a316555aff4 = $(`<div id="html_4679c148e9d9171f2a4f7a316555aff4" style="width: 100.0%; height: 100.0%;"><b>PPVD_2327281</b><br>Cadastre kwh/kWp: 913.5<br>Our kwh/kWp: 1073.9<br>Offset: +17.57%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_5fbdacfe3731e7866da0fe8b944e5245.setContent(html_4679c148e9d9171f2a4f7a316555aff4);
+            
+        
+
+        circle_marker_fa112c56b3bce5034d88b039ad0d9b62.bindPopup(popup_5fbdacfe3731e7866da0fe8b944e5245)
+        ;
+
+        
+    
+    
+            var circle_marker_6db554f026c6187ed9862ae3db071129 = L.circleMarker(
+                [51.187691, 6.820113],
+                {"bubblingMouseEvents": true, "color": "#da2827ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#da2827ff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_ba311d94a895c5fc8622121b0e47e105 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ebb990bbca85393086f0d6c10d9a96af = $(`<div id="html_ebb990bbca85393086f0d6c10d9a96af" style="width: 100.0%; height: 100.0%;"><b>PPVD_2328113</b><br>Cadastre kwh/kWp: 913.5<br>Our kwh/kWp: 1074.3<br>Offset: +17.61%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_ba311d94a895c5fc8622121b0e47e105.setContent(html_ebb990bbca85393086f0d6c10d9a96af);
+            
+        
+
+        circle_marker_6db554f026c6187ed9862ae3db071129.bindPopup(popup_ba311d94a895c5fc8622121b0e47e105)
+        ;
+
+        
+    
+    
+            var circle_marker_57945eb7de3989bca0bdb7a8788eb31c = L.circleMarker(
+                [51.231701, 6.750992],
+                {"bubblingMouseEvents": true, "color": "#f5f9bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5f9bfff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_3343270eeadbc531bb8619e942bb652b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c279f1f79f3bd6869bb5997bad4486f1 = $(`<div id="html_c279f1f79f3bd6869bb5997bad4486f1" style="width: 100.0%; height: 100.0%;"><b>PPVD_2447670</b><br>Cadastre kwh/kWp: 913.5<br>Our kwh/kWp: 1068.5<br>Offset: +16.98%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_3343270eeadbc531bb8619e942bb652b.setContent(html_c279f1f79f3bd6869bb5997bad4486f1);
+            
+        
+
+        circle_marker_57945eb7de3989bca0bdb7a8788eb31c.bindPopup(popup_3343270eeadbc531bb8619e942bb652b)
+        ;
+
+        
+    
+    
+            var circle_marker_7be236388496033efdab37289f7652a2 = L.circleMarker(
+                [51.245627, 6.804477],
+                {"bubblingMouseEvents": true, "color": "#d7191cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d7191cff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_d01c0f7c9799349726c114e65c5ef655 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8995c25f632005a5a11a777679e89d4 = $(`<div id="html_c8995c25f632005a5a11a777679e89d4" style="width: 100.0%; height: 100.0%;"><b>PPVD_2577570</b><br>Cadastre kwh/kWp: 913.5<br>Our kwh/kWp: 1074.7<br>Offset: +17.66%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_d01c0f7c9799349726c114e65c5ef655.setContent(html_c8995c25f632005a5a11a777679e89d4);
+            
+        
+
+        circle_marker_7be236388496033efdab37289f7652a2.bindPopup(popup_d01c0f7c9799349726c114e65c5ef655)
+        ;
+
+        
+    
+    
+            var circle_marker_42b0252da4338da7c91208a5c33e8914 = L.circleMarker(
+                [51.218017, 6.785976],
+                {"bubblingMouseEvents": true, "color": "#99c4bdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99c4bdff", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_678d148ace9285fa21e5f4c948c4d553);
+        
+    
+        var popup_cf25619f79ae6bc676111e10bcb91980 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_204e30055d62dbe8cb741e8719c27d2e = $(`<div id="html_204e30055d62dbe8cb741e8719c27d2e" style="width: 100.0%; height: 100.0%;"><b>PPVD_2584130</b><br>Cadastre kwh/kWp: 913.5<br>Our kwh/kWp: 1066.0<br>Offset: +16.70%<br>Roof tilt (gradprz): 99</div>`)[0];
+                popup_cf25619f79ae6bc676111e10bcb91980.setContent(html_204e30055d62dbe8cb741e8719c27d2e);
+            
+        
+
+        circle_marker_42b0252da4338da7c91208a5c33e8914.bindPopup(popup_cf25619f79ae6bc676111e10bcb91980)
+        ;
+
+        
+    
+    
+    var color_map_547c27e13845c0f88f1293f8f6ca0c0e = {};
+
+    
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.color = d3.scale.threshold()
+              .domain([16.368, 16.37057915831663, 16.373158316633265, 16.375737474949897, 16.378316633266532, 16.380895791583164, 16.3834749498998, 16.38605410821643, 16.388633266533066, 16.391212424849698, 16.39379158316633, 16.396370741482965, 16.398949899799597, 16.401529058116232, 16.404108216432864, 16.4066873747495, 16.40926653306613, 16.411845691382766, 16.414424849699397, 16.41700400801603, 16.419583166332664, 16.422162324649296, 16.42474148296593, 16.427320641282563, 16.429899799599198, 16.43247895791583, 16.435058116232465, 16.437637274549097, 16.44021643286573, 16.442795591182364, 16.445374749498995, 16.44795390781563, 16.450533066132262, 16.453112224448898, 16.45569138276553, 16.458270541082165, 16.460849699398796, 16.463428857715428, 16.466008016032063, 16.468587174348695, 16.47116633266533, 16.473745490981962, 16.476324649298597, 16.47890380761523, 16.481482965931864, 16.484062124248496, 16.486641282565127, 16.489220440881763, 16.491799599198394, 16.49437875751503, 16.49695791583166, 16.499537074148297, 16.502116232464928, 16.504695390781563, 16.507274549098195, 16.509853707414827, 16.512432865731462, 16.515012024048094, 16.51759118236473, 16.52017034068136, 16.522749498997996, 16.525328657314628, 16.527907815631263, 16.530486973947895, 16.533066132264526, 16.53564529058116, 16.538224448897793, 16.54080360721443, 16.54338276553106, 16.545961923847695, 16.548541082164327, 16.551120240480962, 16.553699398797594, 16.556278557114226, 16.55885771543086, 16.561436873747493, 16.564016032064128, 16.56659519038076, 16.569174348697395, 16.571753507014026, 16.57433266533066, 16.576911823647293, 16.579490981963925, 16.58207014028056, 16.584649298597192, 16.587228456913827, 16.58980761523046, 16.592386773547094, 16.594965931863726, 16.59754509018036, 16.600124248496993, 16.602703406813625, 16.60528256513026, 16.60786172344689, 16.610440881763527, 16.61302004008016, 16.615599198396794, 16.618178356713425, 16.62075751503006, 16.623336673346692, 16.625915831663328, 16.62849498997996, 16.63107414829659, 16.633653306613226, 16.636232464929858, 16.638811623246493, 16.641390781563125, 16.64396993987976, 16.64654909819639, 16.649128256513023, 16.65170741482966, 16.65428657314629, 16.656865731462926, 16.659444889779557, 16.662024048096193, 16.664603206412824, 16.66718236472946, 16.66976152304609, 16.672340681362726, 16.674919839679358, 16.67749899799599, 16.680078156312625, 16.682657314629257, 16.685236472945892, 16.687815631262524, 16.69039478957916, 16.69297394789579, 16.695553106212422, 16.698132264529058, 16.70071142284569, 16.703290581162324, 16.705869739478956, 16.70844889779559, 16.711028056112223, 16.71360721442886, 16.71618637274549, 16.718765531062125, 16.721344689378757, 16.72392384769539, 16.726503006012024, 16.729082164328656, 16.73166132264529, 16.734240480961923, 16.736819639278558, 16.73939879759519, 16.741977955911825, 16.744557114228456, 16.747136272545088, 16.749715430861723, 16.752294589178355, 16.75487374749499, 16.757452905811622, 16.760032064128257, 16.76261122244489, 16.765190380761524, 16.767769539078156, 16.770348697394788, 16.772927855711423, 16.775507014028054, 16.77808617234469, 16.78066533066132, 16.783244488977957, 16.78582364729459, 16.788402805611224, 16.790981963927855, 16.793561122244487, 16.796140280561122, 16.798719438877754, 16.80129859719439, 16.80387775551102, 16.806456913827656, 16.809036072144288, 16.811615230460923, 16.814194388777555, 16.816773547094186, 16.81935270541082, 16.821931863727453, 16.82451102204409, 16.82709018036072, 16.829669338677355, 16.832248496993987, 16.834827655310622, 16.837406813627254, 16.839985971943886, 16.84256513026052, 16.845144288577153, 16.847723446893788, 16.85030260521042, 16.852881763527055, 16.855460921843687, 16.858040080160322, 16.860619238476954, 16.863198396793585, 16.86577755511022, 16.868356713426852, 16.870935871743487, 16.87351503006012, 16.876094188376754, 16.878673346693386, 16.88125250501002, 16.883831663326653, 16.886410821643285, 16.88898997995992, 16.89156913827655, 16.894148296593187, 16.89672745490982, 16.899306613226454, 16.901885771543085, 16.90446492985972, 16.907044088176352, 16.909623246492984, 16.91220240480962, 16.91478156312625, 16.917360721442886, 16.919939879759518, 16.922519038076153, 16.925098196392785, 16.92767735470942, 16.930256513026052, 16.932835671342684, 16.93541482965932, 16.93799398797595, 16.940573146292586, 16.943152304609217, 16.945731462925853, 16.948310621242484, 16.95088977955912, 16.95346893787575, 16.956048096192383, 16.958627254509018, 16.96120641282565, 16.963785571142285, 16.966364729458917, 16.968943887775552, 16.971523046092184, 16.97410220440882, 16.97668136272545, 16.979260521042082, 16.981839679358718, 16.98441883767535, 16.986997995991985, 16.989577154308616, 16.99215631262525, 16.994735470941883, 16.99731462925852, 16.99989378757515, 17.002472945891782, 17.005052104208417, 17.00763126252505, 17.010210420841684, 17.012789579158316, 17.01536873747495, 17.017947895791583, 17.020527054108218, 17.02310621242485, 17.02568537074148, 17.028264529058116, 17.030843687374748, 17.033422845691383, 17.036002004008015, 17.03858116232465, 17.041160320641282, 17.043739478957917, 17.04631863727455, 17.04889779559118, 17.051476953907816, 17.054056112224448, 17.056635270541083, 17.059214428857715, 17.06179358717435, 17.06437274549098, 17.066951903807617, 17.06953106212425, 17.07211022044088, 17.074689378757515, 17.077268537074147, 17.079847695390782, 17.082426853707414, 17.08500601202405, 17.08758517034068, 17.090164328657316, 17.092743486973948, 17.09532264529058, 17.097901803607215, 17.100480961923846, 17.10306012024048, 17.105639278557113, 17.10821843687375, 17.11079759519038, 17.113376753507016, 17.115955911823647, 17.11853507014028, 17.121114228456914, 17.123693386773546, 17.12627254509018, 17.128851703406813, 17.131430861723448, 17.13401002004008, 17.136589178356715, 17.139168336673347, 17.14174749498998, 17.144326653306614, 17.146905811623245, 17.14948496993988, 17.152064128256512, 17.154643286573148, 17.15722244488978, 17.159801603206414, 17.162380761523046, 17.164959919839678, 17.167539078156313, 17.170118236472945, 17.17269739478958, 17.17527655310621, 17.177855711422847, 17.18043486973948, 17.183014028056114, 17.185593186372746, 17.188172344689377, 17.190751503006013, 17.193330661322644, 17.19590981963928, 17.19848897795591, 17.201068136272546, 17.203647294589178, 17.206226452905813, 17.208805611222445, 17.211384769539077, 17.213963927855712, 17.216543086172344, 17.21912224448898, 17.22170140280561, 17.224280561122246, 17.226859719438878, 17.229438877755513, 17.232018036072144, 17.234597194388776, 17.23717635270541, 17.239755511022043, 17.24233466933868, 17.24491382765531, 17.247492985971945, 17.250072144288577, 17.252651302605212, 17.255230460921844, 17.25780961923848, 17.26038877755511, 17.262967935871742, 17.265547094188378, 17.26812625250501, 17.270705410821645, 17.273284569138276, 17.27586372745491, 17.278442885771543, 17.281022044088175, 17.28360120240481, 17.286180360721442, 17.288759519038077, 17.29133867735471, 17.293917835671344, 17.296496993987976, 17.29907615230461, 17.301655310621243, 17.304234468937878, 17.30681362725451, 17.30939278557114, 17.311971943887777, 17.31455110220441, 17.317130260521044, 17.319709418837675, 17.32228857715431, 17.324867735470942, 17.327446893787574, 17.33002605210421, 17.33260521042084, 17.335184368737476, 17.337763527054108, 17.340342685370743, 17.342921843687375, 17.34550100200401, 17.34808016032064, 17.350659318637277, 17.35323847695391, 17.35581763527054, 17.358396793587175, 17.360975951903807, 17.363555110220442, 17.366134268537074, 17.36871342685371, 17.37129258517034, 17.373871743486973, 17.376450901803608, 17.37903006012024, 17.381609218436875, 17.384188376753507, 17.386767535070142, 17.389346693386774, 17.39192585170341, 17.39450501002004, 17.397084168336676, 17.399663326653307, 17.40224248496994, 17.404821643286574, 17.407400801603206, 17.40997995991984, 17.412559118236473, 17.415138276553108, 17.41771743486974, 17.42029659318637, 17.422875751503007, 17.42545490981964, 17.428034068136274, 17.430613226452905, 17.43319238476954, 17.435771543086172, 17.438350701402808, 17.44092985971944, 17.443509018036075, 17.446088176352706, 17.448667334669338, 17.451246492985973, 17.453825651302605, 17.45640480961924, 17.458983967935872, 17.461563126252507, 17.46414228456914, 17.46672144288577, 17.469300601202406, 17.471879759519037, 17.474458917835673, 17.477038076152304, 17.47961723446894, 17.48219639278557, 17.484775551102206, 17.487354709418838, 17.489933867735473, 17.492513026052105, 17.495092184368737, 17.497671342685372, 17.500250501002004, 17.50282965931864, 17.50540881763527, 17.507987975951906, 17.510567134268538, 17.51314629258517, 17.515725450901805, 17.518304609218436, 17.52088376753507, 17.523462925851703, 17.52604208416834, 17.52862124248497, 17.531200400801605, 17.533779559118237, 17.536358717434872, 17.538937875751504, 17.541517034068136, 17.54409619238477, 17.546675350701403, 17.549254509018038, 17.55183366733467, 17.554412825651305, 17.556991983967936, 17.55957114228457, 17.562150300601203, 17.564729458917835, 17.56730861723447, 17.569887775551102, 17.572466933867737, 17.57504609218437, 17.577625250501004, 17.580204408817636, 17.58278356713427, 17.585362725450903, 17.587941883767535, 17.59052104208417, 17.5931002004008, 17.595679358717437, 17.59825851703407, 17.600837675350704, 17.603416833667335, 17.60599599198397, 17.608575150300602, 17.611154308617234, 17.61373346693387, 17.6163126252505, 17.618891783567136, 17.621470941883768, 17.624050100200403, 17.626629258517035, 17.62920841683367, 17.6317875751503, 17.634366733466933, 17.63694589178357, 17.6395250501002, 17.642104208416836, 17.644683366733467, 17.647262525050103, 17.649841683366734, 17.65242084168337, 17.655])
+              .range(['#2b83baff', '#2c84baff', '#2c84baff', '#2d85baff', '#2e85baff', '#2f86baff', '#3086baff', '#3187baff', '#3187baff', '#3288baff', '#3388baff', '#3489baff', '#3589baff', '#3689baff', '#378abbff', '#378abbff', '#388bbbff', '#398bbbff', '#3a8cbbff', '#3b8cbbff', '#3c8dbbff', '#3d8dbbff', '#3d8ebbff', '#3e8ebbff', '#3f8fbbff', '#408fbbff', '#4190bbff', '#4290bbff', '#4391bbff', '#4391bbff', '#4492bbff', '#4592bbff', '#4693bbff', '#4793bbff', '#4894bbff', '#4994bbff', '#4995bbff', '#4a95bbff', '#4b96bbff', '#4c96bbff', '#4d97bbff', '#4e97bbff', '#4e98bbff', '#4f98bbff', '#5099bbff', '#5199bbff', '#529abbff', '#539abbff', '#549bbbff', '#549bbbff', '#559cbbff', '#569cbbff', '#579dbbff', '#589dbbff', '#599ebbff', '#5a9ebbff', '#5a9fbbff', '#5b9fbbff', '#5ca0bbff', '#5da0bbff', '#5ea1bbff', '#5fa1bbff', '#60a2bbff', '#60a2bbff', '#61a3bcff', '#62a3bcff', '#63a4bcff', '#64a4bcff', '#65a5bcff', '#66a5bcff', '#66a6bcff', '#67a6bcff', '#68a7bcff', '#69a7bcff', '#6aa8bcff', '#6ba8bcff', '#6ba9bcff', '#6ca9bcff', '#6daabcff', '#6eaabcff', '#6fabbcff', '#70abbcff', '#71acbcff', '#71acbcff', '#72adbcff', '#73adbcff', '#74aebcff', '#75aebcff', '#76afbcff', '#77afbcff', '#77b0bcff', '#78b0bcff', '#79b1bcff', '#7ab1bcff', '#7bb2bcff', '#7cb2bcff', '#7db3bcff', '#7db3bcff', '#7eb4bcff', '#7fb4bcff', '#80b5bcff', '#81b5bcff', '#82b6bcff', '#83b6bcff', '#83b7bcff', '#84b7bcff', '#85b8bcff', '#86b8bcff', '#87b9bcff', '#88b9bcff', '#89babcff', '#89babcff', '#8abbbcff', '#8bbbbdff', '#8cbcbdff', '#8dbcbdff', '#8ebdbdff', '#8ebdbdff', '#8fbebdff', '#90bebdff', '#91bfbdff', '#92bfbdff', '#93c0bdff', '#94c0bdff', '#94c1bdff', '#95c1bdff', '#96c2bdff', '#97c2bdff', '#98c3bdff', '#99c3bdff', '#9ac4bdff', '#9ac4bdff', '#9bc5bdff', '#9cc5bdff', '#9dc6bdff', '#9ec6bdff', '#9fc7bdff', '#a0c7bdff', '#a0c8bdff', '#a1c8bdff', '#a2c9bdff', '#a3c9bdff', '#a4cabdff', '#a5cabdff', '#a6cbbdff', '#a6cbbdff', '#a7ccbdff', '#a8ccbdff', '#a9cdbdff', '#aacdbdff', '#abcebdff', '#abcebdff', '#accfbdff', '#adcfbdff', '#aed0bdff', '#afd0bdff', '#b0d1bdff', '#b1d1bdff', '#b1d2bdff', '#b2d2bdff', '#b3d3bdff', '#b4d3bdff', '#b5d4bdff', '#b6d4beff', '#b7d5beff', '#b7d5beff', '#b8d6beff', '#b9d6beff', '#bad7beff', '#bbd7beff', '#bcd8beff', '#bdd8beff', '#bdd9beff', '#bed9beff', '#bfdabeff', '#c0dabeff', '#c1dbbeff', '#c2dbbeff', '#c3dcbeff', '#c3dcbeff', '#c4ddbeff', '#c5ddbeff', '#c6debeff', '#c7debeff', '#c8dfbeff', '#c8dfbeff', '#c9e0beff', '#cae0beff', '#cbe1beff', '#cce1beff', '#cde2beff', '#cee2beff', '#cee3beff', '#cfe3beff', '#d0e4beff', '#d1e4beff', '#d2e5beff', '#d3e5beff', '#d4e6beff', '#d4e6beff', '#d5e7beff', '#d6e7beff', '#d7e8beff', '#d8e8beff', '#d9e9beff', '#dae9beff', '#daeabeff', '#dbeabeff', '#dcebbeff', '#ddebbeff', '#deecbeff', '#dfecbeff', '#e0edbeff', '#e0edbfff', '#e1eebfff', '#e2eebfff', '#e3efbfff', '#e4efbfff', '#e5f0bfff', '#e5f0bfff', '#e6f1bfff', '#e7f1bfff', '#e8f2bfff', '#e9f2bfff', '#eaf3bfff', '#ebf3bfff', '#ebf4bfff', '#ecf4bfff', '#edf5bfff', '#eef5bfff', '#eff6bfff', '#f0f6bfff', '#f1f7bfff', '#f1f7bfff', '#f2f8bfff', '#f3f8bfff', '#f4f9bfff', '#f5f9bfff', '#f6fabfff', '#f7fabfff', '#f7fbbfff', '#f8fbbfff', '#f9fcbfff', '#fafcbfff', '#fbfdbfff', '#fcfdbfff', '#fdfebfff', '#fdfebfff', '#feffbfff', '#ffffbfff', '#ffffbfff', '#fffebeff', '#fffdbeff', '#fffcbdff', '#fffbbcff', '#fffabcff', '#fef9bbff', '#fef9baff', '#fef8baff', '#fef7b9ff', '#fef6b8ff', '#fef5b8ff', '#fdf4b7ff', '#fdf3b6ff', '#fdf2b6ff', '#fdf1b5ff', '#fdf0b4ff', '#fdefb4ff', '#fdeeb3ff', '#fcedb2ff', '#fcedb2ff', '#fcecb1ff', '#fcebb0ff', '#fceab0ff', '#fce9afff', '#fbe8afff', '#fbe7aeff', '#fbe6adff', '#fbe5adff', '#fbe4acff', '#fbe3abff', '#fae2abff', '#fae1aaff', '#fae0a9ff', '#fae0a9ff', '#fadfa8ff', '#fadea7ff', '#f9dda7ff', '#f9dca6ff', '#f9dba5ff', '#f9daa5ff', '#f9d9a4ff', '#f9d8a3ff', '#f8d7a3ff', '#f8d6a2ff', '#f8d5a1ff', '#f8d4a1ff', '#f8d4a0ff', '#f8d39fff', '#f8d29fff', '#f7d19eff', '#f7d09dff', '#f7cf9dff', '#f7ce9cff', '#f7cd9cff', '#f7cc9bff', '#f6cb9aff', '#f6ca9aff', '#f6c999ff', '#f6c898ff', '#f6c898ff', '#f6c797ff', '#f5c696ff', '#f5c596ff', '#f5c495ff', '#f5c394ff', '#f5c294ff', '#f5c193ff', '#f4c092ff', '#f4bf92ff', '#f4be91ff', '#f4bd90ff', '#f4bc90ff', '#f4bb8fff', '#f4bb8eff', '#f3ba8eff', '#f3b98dff', '#f3b88cff', '#f3b78cff', '#f3b68bff', '#f3b58aff', '#f2b48aff', '#f2b389ff', '#f2b288ff', '#f2b188ff', '#f2b087ff', '#f2af87ff', '#f1af86ff', '#f1ae85ff', '#f1ad85ff', '#f1ac84ff', '#f1ab83ff', '#f1aa83ff', '#f0a982ff', '#f0a881ff', '#f0a781ff', '#f0a680ff', '#f0a57fff', '#f0a47fff', '#efa37eff', '#efa27dff', '#efa27dff', '#efa17cff', '#efa07bff', '#ef9f7bff', '#ef9e7aff', '#ee9d79ff', '#ee9c79ff', '#ee9b78ff', '#ee9a77ff', '#ee9977ff', '#ee9876ff', '#ed9775ff', '#ed9675ff', '#ed9674ff', '#ed9573ff', '#ed9473ff', '#ed9372ff', '#ec9272ff', '#ec9171ff', '#ec9070ff', '#ec8f70ff', '#ec8e6fff', '#ec8d6eff', '#eb8c6eff', '#eb8b6dff', '#eb8a6cff', '#eb8a6cff', '#eb896bff', '#eb886aff', '#ea876aff', '#ea8669ff', '#ea8568ff', '#ea8468ff', '#ea8367ff', '#ea8266ff', '#ea8166ff', '#e98065ff', '#e97f64ff', '#e97e64ff', '#e97d63ff', '#e97d62ff', '#e97c62ff', '#e87b61ff', '#e87a60ff', '#e87960ff', '#e8785fff', '#e8775fff', '#e8765eff', '#e7755dff', '#e7745dff', '#e7735cff', '#e7725bff', '#e7715bff', '#e7715aff', '#e67059ff', '#e66f59ff', '#e66e58ff', '#e66d57ff', '#e66c57ff', '#e66b56ff', '#e66a55ff', '#e56955ff', '#e56854ff', '#e56753ff', '#e56653ff', '#e56552ff', '#e56451ff', '#e46451ff', '#e46350ff', '#e4624fff', '#e4614fff', '#e4604eff', '#e45f4dff', '#e35e4dff', '#e35d4cff', '#e35c4bff', '#e35b4bff', '#e35a4aff', '#e3594aff', '#e25849ff', '#e25848ff', '#e25748ff', '#e25647ff', '#e25546ff', '#e25446ff', '#e15345ff', '#e15244ff', '#e15144ff', '#e15043ff', '#e14f42ff', '#e14e42ff', '#e14d41ff', '#e04c40ff', '#e04b40ff', '#e04b3fff', '#e04a3eff', '#e0493eff', '#e0483dff', '#df473cff', '#df463cff', '#df453bff', '#df443aff', '#df433aff', '#df4239ff', '#de4138ff', '#de4038ff', '#de3f37ff', '#de3f37ff', '#de3e36ff', '#de3d35ff', '#dd3c35ff', '#dd3b34ff', '#dd3a33ff', '#dd3933ff', '#dd3832ff', '#dd3731ff', '#dc3631ff', '#dc3530ff', '#dc342fff', '#dc332fff', '#dc332eff', '#dc322dff', '#dc312dff', '#db302cff', '#db2f2bff', '#db2e2bff', '#db2d2aff', '#db2c29ff', '#db2b29ff', '#da2a28ff', '#da2927ff', '#da2827ff', '#da2726ff', '#da2625ff', '#da2625ff', '#d92524ff', '#d92423ff', '#d92323ff', '#d92222ff', '#d92122ff', '#d92021ff', '#d81f20ff', '#d81e20ff', '#d81d1fff', '#d81c1eff', '#d81b1eff', '#d81a1dff', '#d81a1cff', '#d7191cff']);
+    
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.x = d3.scale.linear()
+              .domain([16.368, 17.655])
+              .range([0, 450 - 50]);
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.legend = L.control({position: 'topright'});
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.legend.addTo(map_678d148ace9285fa21e5f4c948c4d553);
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.xAxis = d3.svg.axis()
+        .scale(color_map_547c27e13845c0f88f1293f8f6ca0c0e.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([16.368, 17.011499999999998, 17.655]);
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.g = color_map_547c27e13845c0f88f1293f8f6ca0c0e.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.g.selectAll("rect")
+        .data(color_map_547c27e13845c0f88f1293f8f6ca0c0e.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_547c27e13845c0f88f1293f8f6ca0c0e.x(color_map_547c27e13845c0f88f1293f8f6ca0c0e.color.domain()[i - 1]) : color_map_547c27e13845c0f88f1293f8f6ca0c0e.x.range()[0],
+            x1: i < color_map_547c27e13845c0f88f1293f8f6ca0c0e.color.domain().length ? color_map_547c27e13845c0f88f1293f8f6ca0c0e.x(color_map_547c27e13845c0f88f1293f8f6ca0c0e.color.domain()[i]) : color_map_547c27e13845c0f88f1293f8f6ca0c0e.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_547c27e13845c0f88f1293f8f6ca0c0e.g.call(color_map_547c27e13845c0f88f1293f8f6ca0c0e.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("ERA5 vs. Solarkataster cadastre yield offset (%)");
+</script>
+</html>
