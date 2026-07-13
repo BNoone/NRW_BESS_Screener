@@ -222,3 +222,9 @@ data/*.zip
 data/shp_duesseldorf/
 # Keep small metadata files (xlsx) — committed separately
 
+# MaStR bulk download (national SQLite DB + raw XML dump, several GB)
+data/open-mastr/
+
+# macOS
+.DS_Store
+
