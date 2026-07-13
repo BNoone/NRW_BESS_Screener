@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NRW BESS Screener</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --border: #e2e5ea;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --accent: #d97706;
+    --accent-2: #2563eb;
+    --good: #16a34a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 24px;
+  }
+  header .inner, main, footer .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  header h1 {
+    margin: 0 0 6px 0;
+    font-size: 1.7rem;
+  }
+  header p {
+    margin: 0 0 10px 0;
+    color: var(--muted);
+  }
+  header a.readme-link {
+    color: var(--accent-2);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  header a.readme-link:hover { text-decoration: underline; }
+
+  .status-line {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    color: #92400e;
+    padding: 10px 24px;
+    font-size: 0.92rem;
+    text-align: center;
+  }
+
+  main { padding: 32px 24px 8px 24px; }
+
+  section { margin-bottom: 48px; }
+  section h2 {
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  section > p.section-note {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: -8px;
+  }
+
+  .img-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  .img-row figure {
+    flex: 1 1 420px;
+    margin: 0;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .img-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  .img-row figcaption {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .map-frame-wrap {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+  .map-frame-wrap iframe {
+    width: 100%;
+    height: 520px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+  }
+  .map-frame-wrap figcaption {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .maps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 860px) {
+    .maps-grid { grid-template-columns: 1fr; }
+  }
+
+  .callout {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+  }
+  .callout .headline {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--good);
+    margin-bottom: 14px;
+  }
+  .callout .subfigures {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .callout .stat {
+    min-width: 180px;
+  }
+  .callout .stat .value {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .callout .stat .label {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 4px;
+  }
+  .stat-cards .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .stat-cards .card .value {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .stat-cards .card .label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  footer {
+    background: var(--card-bg);
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    margin-top: 24px;
+  }
+  footer h3 {
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+  }
+  footer ul {
+    margin: 0 0 18px 0;
+    padding-left: 20px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  footer ul:last-child { margin-bottom: 0; }
+  footer a { color: var(--accent-2); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <h1>NRW BESS Screener</h1>
+    <p>A screening pipeline for battery storage (BESS) and PV potential in Nordrhein-Westfalen, Germany.</p>
+    <a class="readme-link" href="README.md">Full README &rarr;</a>
+  </div>
+</header>
+
+<div class="status-line">
+  Layer 1 + Layer 2 complete. Layer 3 (economics) and Layer 4 (simulation) in progress.
+</div>
+
+<main>
+
+  <section id="layer1">
+    <h2>Layer 1 &mdash; Solar Production Modeling</h2>
+    <p class="section-note">Hourly and full-year PV output estimator (Open-Meteo ERA5 Global Tilted Irradiance), validated against 100 real rooftops from the Solarkataster NRW cadastre.</p>
+
+    <div class="img-row">
+      <figure>
+        <img src="pp2_layer1_hourly_output.png" alt="Hourly solar production, single day">
+        <figcaption>Hourly production, one clear summer day (Duesseldorf, 10 kWp system)</figcaption>
+      </figure>
+      <figure>
+        <img src="pp2_layer1_2025_monthly_totals.png" alt="Monthly production totals, 2025">
+        <figcaption>Monthly production totals, full year 2025</figcaption>
+      </figure>
+    </div>
+
+    <div class="map-frame-wrap">
+      <iframe src="map_dus_top100.html" title="Duesseldorf top-100 rooftop validation map"></iframe>
+      <figcaption>100 curated Duesseldorf rooftops &mdash; ERA5-based estimate vs. Solarkataster cadastre yield, colored by percent offset</figcaption>
+    </div>
+
+    <p>
+      <strong>Validation result:</strong> across the 100 roofs, our ERA5-based yield estimate is
+      consistently <strong>+17.1% above</strong> the Solarkataster's own cadastre figure, with a tight
+      <strong>0.28% standard deviation</strong>. That tightness shows the pipeline is internally
+      consistent; the offset itself is explained by 2025 being an anomalously sunny year in the
+      ERA5 record compared to the DWD climatological baseline the cadastre uses &mdash; not a
+      formula error.
+    </p>
+  </section>
+
+  <section id="potential-vs-actual">
+    <h2>Duesseldorf: Potential vs. Actual</h2>
+    <div class="callout">
+      <div class="headline">22.5% of Duesseldorf's pitched-roof solar potential (kw&ge;10) is currently realized</div>
+      <div class="subfigures">
+        <div class="stat">
+          <div class="value">716,356 kWp</div>
+          <div class="label">Theoretical potential (pitched roofs, &ge;10&nbsp;kW)</div>
+        </div>
+        <div class="stat">
+          <div class="value">161,365 kWp</div>
+          <div class="label">Actual registered (MaStR)</div>
+        </div>
+      </div>
+    </div>
+    <p class="section-note" style="margin-top:12px;">Flat roofs are excluded from the theoretical figure, so this is a floor estimate of total potential, not the full physical ceiling.</p>
+  </section>
+
+  <section id="layer2">
+    <h2>Layer 2 &mdash; NRW BESS + PV Inventory</h2>
+    <p class="section-note">Battery storage and PV unit inventory for all of Nordrhein-Westfalen, sourced from the Marktstammdatenregister (MaStR) via <code>open-mastr</code>.</p>
+
+    <div class="maps-grid">
+      <div class="map-frame-wrap">
+        <iframe src="map_nrw_bess.html" title="NRW battery storage by Kreis"></iframe>
+        <figcaption>Battery storage capacity by Kreis</figcaption>
+      </div>
+      <div class="map-frame-wrap">
+        <iframe src="map_nrw_pv.html" title="NRW PV capacity by Kreis"></iframe>
+        <figcaption>PV capacity by Kreis</figcaption>
+      </div>
+    </div>
+
+    <div class="stat-cards">
+      <div class="card">
+        <div class="value">511,057</div>
+        <div class="label">Battery storage units, NRW-wide</div>
+      </div>
+      <div class="card">
+        <div class="value">4.82M kW / 7.07M kWh</div>
+        <div class="label">Total battery power / usable energy</div>
+      </div>
+      <div class="card">
+        <div class="value">1,163,138</div>
+        <div class="label">PV units, NRW-wide</div>
+      </div>
+      <div class="card">
+        <div class="value">16.0M kWp</div>
+        <div class="label">Total installed PV capacity</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="inner">
+    <h3>Sources &amp; Licenses</h3>
+    <ul>
+      <li><strong>Open-Meteo</strong> ERA5 historical archive (Global Tilted Irradiance) &mdash; CC BY 4.0</li>
+      <li><strong>Marktstammdatenregister (MaStR)</strong> &mdash; German federal register of power-generation and storage units, via <a href="https://github.com/OpenEnergyPlatform/open-MaStR">open-mastr</a>; self-reported by plant operators</li>
+      <li><strong>Solarkataster NRW</strong> (Land.NRW / Geobasis NRW) &mdash; rooftop PV potential cadastre for Duesseldorf; Datenlizenz Deutschland &ndash; Namensnennung &ndash; Version 2.0</li>
+      <li><strong><a href="https://github.com/isellsoap/deutschlandGeoJSON">deutschlandGeoJSON</a></strong> (isellsoap) &mdash; German administrative boundaries (Kreis level), GADM/DIVA-GIS derived</li>
+    </ul>
+    <h3>Limitations</h3>
+    <ul>
+      <li>Solarkataster figures are theoretical rooftop potential only (shading/geometry model), not an economic or grid-connection feasibility assessment.</li>
+      <li>MaStR is self-reported registry data with known gaps: usable storage capacity (kWh) is unpopulated at the unit level and had to be joined from a separate plant-level table; a small number of rows have inconsistent Bundesland/Landkreis values.</li>
+      <li>ERA5-based yield estimates run +17.1% above the Solarkataster cadastre (0.28% std across 100 validated roofs) &mdash; a data-source difference (2025 being unusually sunny in ERA5 vs. the cadastre's DWD baseline), not a formula error.</li>
+      <li>NRW Kreis boundaries come from a GADM-derived source with pre-2009 administrative boundaries (no native "Staedteregion Aachen"); joined to MaStR data via a manual name-normalization mapping.</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

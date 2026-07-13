@@ -220,6 +220,7 @@ __marimo__/
 # Large geodata downloads (shapefile zips and unzipped folders)
 data/*.zip
 data/shp_duesseldorf/
+data_solarkataster/
 # Keep small metadata files (xlsx) — committed separately
 
 # MaStR bulk download (national SQLite DB + raw XML dump, several GB)
