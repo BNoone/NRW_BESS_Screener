@@ -248,25 +248,7 @@
 
   <section id="layer1">
     <h2>Layer 1 &mdash; Solar Production Modeling</h2>
-    <p class="section-note">Hourly and full-year PV output estimator (Open-Meteo ERA5 Global Tilted Irradiance), validated against 100 real rooftops from the Solarkataster NRW cadastre.</p>
-
-    <div class="source-cards">
-      <div class="card">
-        <h4>ERA5 (Open-Meteo)</h4>
-        <p>A historical weather <em>reanalysis</em> dataset from ECMWF/Copernicus: it combines real
-        observations with physics-based modeling into a continuous, gridded hourly record going back
-        to 1940. That's what makes an hourly solar-irradiance estimate for any past date and location
-        possible in the first place.
-        <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank" rel="noopener">Docs &rarr;</a></p>
-      </div>
-      <div class="card">
-        <h4>Solarkataster NRW</h4>
-        <p>The state government's official rooftop solar potential map for Nordrhein-Westfalen, built
-        from LiDAR laser scans of every roof in the state &mdash; giving per-roof tilt, orientation,
-        shading, and installable capacity at cadastre-grade accuracy.
-        <a href="https://www.opengeodata.nrw.de/produkte/umwelt_klima/energie/solarkataster/" target="_blank" rel="noopener">Source &rarr;</a></p>
-      </div>
-    </div>
+    <p class="section-note">Hourly and full-year PV output estimator (Open-Meteo ERA5 Global Tilted Irradiance), validated against 100 real rooftops from the Solarkataster NRW cadastre. See <a href="#methodology">Methodology &amp; Data Sources</a> below for what ERA5 and the Solarkataster actually are.</p>
 
     <div class="img-row">
       <figure>
@@ -285,7 +267,7 @@
 
     <div class="map-frame-wrap">
       <iframe src="map_dus_top100.html" title="Duesseldorf top-100 rooftop validation map"></iframe>
-      <figcaption>100 curated Duesseldorf rooftops &mdash; ERA5-based estimate vs. Solarkataster cadastre yield, colored by percent offset</figcaption>
+      <figcaption>100 curated Duesseldorf rooftops &mdash; ERA5-based estimate vs. Solarkataster cadastre yield, colored by percent offset. Click a roof for approximate daily production by season (spring/summer/autumn/winter).</figcaption>
     </div>
 
     <div class="map-legend">
@@ -355,16 +337,7 @@
       yet &mdash; that's Phase B.
     </p>
 
-    <div class="maps-grid">
-      <div class="map-frame-wrap">
-        <iframe src="map_nrw_bess.html" title="NRW battery storage by Kreis"></iframe>
-        <figcaption>Battery storage capacity by Kreis</figcaption>
-      </div>
-      <div class="map-frame-wrap">
-        <iframe src="map_nrw_pv.html" title="NRW PV capacity by Kreis"></iframe>
-        <figcaption>PV capacity by Kreis</figcaption>
-      </div>
-    </div>
+    <p class="section-note">Both NRW maps (with chemistry/size filters and a Duesseldorf point-level layer) are in <a href="#methodology">Methodology &amp; Data Sources</a> below, alongside the source explainers.</p>
 
     <div class="stat-cards">
       <div class="card">
@@ -382,6 +355,76 @@
       <div class="card">
         <div class="value">16.0M kWp</div>
         <div class="label">Total installed PV capacity</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:1rem; margin: 22px 0 10px;">Battery storage by chemistry (NRW-wide)</h3>
+    <div class="stat-cards">
+      <div class="card">
+        <div class="value">509,082 units</div>
+        <div class="label">Lithium-Batterie &mdash; 4.73M kW / 6.88M kWh</div>
+      </div>
+      <div class="card">
+        <div class="value">1,716 units</div>
+        <div class="label">Blei-Batterie &mdash; 80,650.9 kW / 176,063.2 kWh</div>
+      </div>
+      <div class="card">
+        <div class="value">107 units</div>
+        <div class="label">Redox-Flow-Batterie &mdash; 6,573.8 kW / 11,763.2 kWh</div>
+      </div>
+      <div class="card">
+        <div class="value">152 units</div>
+        <div class="label">Hochtemperaturbatterie &mdash; 1,991.4 kW / 2,898.3 kWh</div>
+      </div>
+    </div>
+
+    <h3 style="font-size:1rem; margin: 22px 0 10px;">PV by installation size (NRW-wide)</h3>
+    <div class="stat-cards">
+      <div class="card">
+        <div class="value">815,703 units</div>
+        <div class="label">Residential (&lt;10 kWp) &mdash; 3.81M kWp</div>
+      </div>
+      <div class="card">
+        <div class="value">335,453 units</div>
+        <div class="label">Commercial (10&ndash;100 kWp) &mdash; 6.83M kWp</div>
+      </div>
+      <div class="card">
+        <div class="value">11,982 units</div>
+        <div class="label">Utility-scale (&ge;100 kWp) &mdash; 5.38M kWp</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="methodology">
+    <h2>Methodology &amp; Data Sources</h2>
+    <p class="section-note">Where the numbers above actually come from, and the full NRW battery/PV maps with filters and a Duesseldorf point-level view.</p>
+
+    <div class="source-cards">
+      <div class="card">
+        <h4>ERA5 (Open-Meteo)</h4>
+        <p>A historical weather <em>reanalysis</em> dataset from ECMWF/Copernicus: it combines real
+        observations with physics-based modeling into a continuous, gridded hourly record going back
+        to 1940. That's what makes an hourly solar-irradiance estimate for any past date and location
+        possible in the first place.
+        <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank" rel="noopener">Docs &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h4>Solarkataster NRW</h4>
+        <p>The state government's official rooftop solar potential map for Nordrhein-Westfalen, built
+        from LiDAR laser scans of every roof in the state &mdash; giving per-roof tilt, orientation,
+        shading, and installable capacity at cadastre-grade accuracy.
+        <a href="https://www.opengeodata.nrw.de/produkte/umwelt_klima/energie/solarkataster/" target="_blank" rel="noopener">Source &rarr;</a></p>
+      </div>
+    </div>
+
+    <div class="maps-grid">
+      <div class="map-frame-wrap">
+        <iframe src="map_nrw_bess.html" title="NRW battery storage by Kreis"></iframe>
+        <figcaption>Battery storage capacity by Kreis &mdash; quantile-scaled coloring (equal counts of Kreise per color band, not equal kW ranges, so one outlier Kreis doesn't wash out the rest). Use the layer control (top right) to filter by chemistry or switch to individual Duesseldorf sites. <strong>Duesseldorf point-level layer: 29 of 6,672 registered BESS units shown &mdash; only sites with reported coordinates (MaStR coordinates are sparse/self-reported).</strong></figcaption>
+      </div>
+      <div class="map-frame-wrap">
+        <iframe src="map_nrw_pv.html" title="NRW PV capacity by Kreis"></iframe>
+        <figcaption>PV capacity by Kreis &mdash; same quantile scaling. Use the layer control to filter by installation size (residential/commercial/utility-scale) or switch to individual Duesseldorf sites. <strong>Duesseldorf point-level layer: 368 of 11,820 registered PV units shown &mdash; only sites with reported coordinates (MaStR coordinates are sparse/self-reported).</strong></figcaption>
       </div>
     </div>
   </section>
