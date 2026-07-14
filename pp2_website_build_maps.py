@@ -61,7 +61,8 @@ def build_top100_map():
             f"Cadastre kwh/kWp: {row['kwh_kwp']:.1f}<br>"
             f"Our kwh/kWp: {row['our_kwh_per_kwp']:.1f}<br>"
             f"Offset: {row['pct_diff']:+.2f}%<br>"
-            f"Roof tilt (gradprz): {row['gradprz']}"
+            f"Shading-adjusted irradiation received: {row['gradprz']}%<br>"
+            f"Roof tilt: {row['neigung_deg']}&deg;"
         )
         folium.CircleMarker(
             location=(row["lat"], row["lon"]),

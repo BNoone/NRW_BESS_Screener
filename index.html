@@ -47,15 +47,6 @@
   }
   header a.readme-link:hover { text-decoration: underline; }
 
-  .status-line {
-    background: #fffbeb;
-    border: 1px solid #fde68a;
-    color: #92400e;
-    padding: 10px 24px;
-    font-size: 0.92rem;
-    text-align: center;
-  }
-
   main { padding: 32px 24px 8px 24px; }
 
   section { margin-bottom: 48px; }
@@ -126,6 +117,40 @@
   }
   @media (max-width: 860px) {
     .maps-grid { grid-template-columns: 1fr; }
+  }
+
+  .source-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .source-cards .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 0.9rem;
+  }
+  .source-cards .card h4 {
+    margin: 0 0 6px 0;
+    font-size: 0.95rem;
+  }
+  .source-cards .card a {
+    color: var(--accent-2);
+  }
+
+  .map-legend {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+  }
+  .map-legend h4 {
+    margin: 0 0 6px 0;
+    font-size: 0.92rem;
   }
 
   .callout {
@@ -206,20 +231,42 @@
 <header>
   <div class="inner">
     <h1>NRW BESS Screener</h1>
-    <p>A screening pipeline for battery storage (BESS) and PV potential in Nordrhein-Westfalen, Germany.</p>
+    <p>
+      A screening pipeline focused on <strong>PV potential in Duesseldorf</strong> &mdash;
+      how much rooftop solar could realistically be installed, and how much
+      already is &mdash; extending into a look at <strong>battery storage (BESS)
+      already in place in Duesseldorf and the surrounding area</strong>, as a
+      first step toward asking whether that storage could absorb locally
+      generated solar output. Wider NRW-wide data is included for context,
+      but Duesseldorf is the focus.
+    </p>
     <a class="readme-link" href="README.md">Full README &rarr;</a>
   </div>
 </header>
-
-<div class="status-line">
-  Layer 1 + Layer 2 complete. Layer 3 (economics) and Layer 4 (simulation) in progress.
-</div>
 
 <main>
 
   <section id="layer1">
     <h2>Layer 1 &mdash; Solar Production Modeling</h2>
     <p class="section-note">Hourly and full-year PV output estimator (Open-Meteo ERA5 Global Tilted Irradiance), validated against 100 real rooftops from the Solarkataster NRW cadastre.</p>
+
+    <div class="source-cards">
+      <div class="card">
+        <h4>ERA5 (Open-Meteo)</h4>
+        <p>A historical weather <em>reanalysis</em> dataset from ECMWF/Copernicus: it combines real
+        observations with physics-based modeling into a continuous, gridded hourly record going back
+        to 1940. That's what makes an hourly solar-irradiance estimate for any past date and location
+        possible in the first place.
+        <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank" rel="noopener">Docs &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h4>Solarkataster NRW</h4>
+        <p>The state government's official rooftop solar potential map for Nordrhein-Westfalen, built
+        from LiDAR laser scans of every roof in the state &mdash; giving per-roof tilt, orientation,
+        shading, and installable capacity at cadastre-grade accuracy.
+        <a href="https://www.opengeodata.nrw.de/produkte/umwelt_klima/energie/solarkataster/" target="_blank" rel="noopener">Source &rarr;</a></p>
+      </div>
+    </div>
 
     <div class="img-row">
       <figure>
@@ -231,10 +278,26 @@
         <figcaption>Monthly production totals, full year 2025</figcaption>
       </figure>
     </div>
+    <p class="section-note">The single-day MVP run above uses <strong>2023-06-21</strong> &mdash; the
+    summer solstice &mdash; deliberately, not at random: it's the longest, highest-irradiance day of
+    the year, making it the best-case clear-sky scenario for an initial formula sanity check before
+    scaling up.</p>
 
     <div class="map-frame-wrap">
       <iframe src="map_dus_top100.html" title="Duesseldorf top-100 rooftop validation map"></iframe>
       <figcaption>100 curated Duesseldorf rooftops &mdash; ERA5-based estimate vs. Solarkataster cadastre yield, colored by percent offset</figcaption>
+    </div>
+
+    <div class="map-legend">
+      <h4>Reading the offset map</h4>
+      <p>Each dot is one rooftop. <strong>"Offset"</strong> is the percent difference between our
+      ERA5-based yield estimate and the Solarkataster cadastre's own official figure for that same
+      roof. Every roof here reads consistently around <strong>+17%</strong>, and that consistency
+      is the point: 2025 was an anomalously sunny year in the ERA5 record relative to the multi-year
+      DWD climatological baseline the cadastre uses, so a uniform upward offset is expected from a
+      single-year comparison. The tight <strong>0.28% standard deviation</strong> across all 100 roofs
+      is the evidence that the formula itself is accurate &mdash; if it were wrong, the offset would
+      vary roof-to-roof instead of moving together as one consistent shift.</p>
     </div>
 
     <p>
@@ -250,11 +313,19 @@
   <section id="potential-vs-actual">
     <h2>Duesseldorf: Potential vs. Actual</h2>
     <div class="callout">
-      <div class="headline">22.5% of Duesseldorf's pitched-roof solar potential (kw&ge;10) is currently realized</div>
+      <div class="headline">14.0% of Duesseldorf's pitched+flat-roof solar potential (kw&ge;10) is currently realized</div>
       <div class="subfigures">
         <div class="stat">
           <div class="value">716,356 kWp</div>
-          <div class="label">Theoretical potential (pitched roofs, &ge;10&nbsp;kW)</div>
+          <div class="label">Pitched-roof potential</div>
+        </div>
+        <div class="stat">
+          <div class="value">439,728 kWp</div>
+          <div class="label">Flat-roof potential</div>
+        </div>
+        <div class="stat">
+          <div class="value">1,156,084 kWp</div>
+          <div class="label">Combined total potential</div>
         </div>
         <div class="stat">
           <div class="value">161,365 kWp</div>
@@ -262,12 +333,27 @@
         </div>
       </div>
     </div>
-    <p class="section-note" style="margin-top:12px;">Flat roofs are excluded from the theoretical figure, so this is a floor estimate of total potential, not the full physical ceiling.</p>
+    <p class="section-note" style="margin-top:12px;">
+      An earlier pass covered pitched roofs only (716,356 kWp), which understated total potential by
+      excluding flat roofs entirely. Flat-roof figures are cadastre-sourced (Solarkataster's own
+      21.7%-efficiency methodology, assuming south-facing mounting), not a fallback estimate &mdash;
+      see the README for the data-quality check behind that. Even combined, this is still a floor
+      estimate, not the full physical ceiling: roofs below the 10&nbsp;kW size threshold, and
+      shading/structural/economic constraints the cadastre doesn't model, are still excluded.
+    </p>
   </section>
 
   <section id="layer2">
     <h2>Layer 2 &mdash; NRW BESS + PV Inventory</h2>
-    <p class="section-note">Battery storage and PV unit inventory for all of Nordrhein-Westfalen, sourced from the Marktstammdatenregister (MaStR) via <code>open-mastr</code>.</p>
+    <p class="section-note">Battery storage and PV unit inventory for all of Nordrhein-Westfalen, sourced from the Marktstammdatenregister (MaStR) via <code>open-mastr</code>. NRW-wide figures are shown for context; Duesseldorf and its surrounding area are the focus.</p>
+
+    <p>
+      <strong>Why battery storage matters here:</strong> the BESS inventory below shows how much
+      battery storage capacity already exists locally &mdash; capacity that could, in principle,
+      absorb solar output generated on a given day rather than exporting it or curtailing it. This
+      is framing only for now: no charge/discharge matching or absorption calculation has been done
+      yet &mdash; that's Phase B.
+    </p>
 
     <div class="maps-grid">
       <div class="map-frame-wrap">
@@ -313,7 +399,7 @@
     </ul>
     <h3>Limitations</h3>
     <ul>
-      <li>Solarkataster figures are theoretical rooftop potential only (shading/geometry model), not an economic or grid-connection feasibility assessment.</li>
+      <li>Solarkataster figures are theoretical rooftop potential only (shading/geometry model), not an economic or grid-connection feasibility assessment. Flat-roof potential assumes south-facing mounting per the cadastre's own methodology (a separate east/west figure exists but isn't used here).</li>
       <li>MaStR is self-reported registry data with known gaps: usable storage capacity (kWh) is unpopulated at the unit level and had to be joined from a separate plant-level table; a small number of rows have inconsistent Bundesland/Landkreis values.</li>
       <li>ERA5-based yield estimates run +17.1% above the Solarkataster cadastre (0.28% std across 100 validated roofs) &mdash; a data-source difference (2025 being unusually sunny in ERA5 vs. the cadastre's DWD baseline), not a formula error.</li>
       <li>NRW Kreis boundaries come from a GADM-derived source with pre-2009 administrative boundaries (no native "Staedteregion Aachen"); joined to MaStR data via a manual name-normalization mapping.</li>
