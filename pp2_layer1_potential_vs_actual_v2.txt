@@ -1,0 +1,22 @@
+PP2 Layer 1 v2 - Duesseldorf: Theoretical PV Potential vs. Actual Registered
+(pitched + flat roofs combined)
+==============================================================================
+Filter (both roof types)         : kw >= 10
+
+Pitched roofs (dachtyp='geneigt') : 38,387 roofs, 716,356.3 kWp, 531,306,252.4 kWh/year
+Flat roofs (dachtyp='flach')      : 11,425 roofs, 439,727.8 kWp, 389,602,966.8 kWh/year
+  (flat-roof figures are cadastre-sourced, south-facing mounting
+   assumption per the cadastre's own methodology - not a fallback
+   estimate; see investigation output above.)
+
+Combined total potential          : 1,156,084.1 kWp
+Combined total annual yield        : 920,909,219.2 kWh/year
+Actual registered (MaStR)          : 161,365 kWp
+Realized                           : 14.0% of combined pitched+flat potential (kw>=10) already installed
+
+Note: v1 (pp2_layer1_potential_vs_actual.txt) covered pitched roofs only
+and understated total potential by excluding flat roofs entirely. This
+combined figure is a better floor estimate, though still not the full
+physical ceiling (e.g. roofs below the 10 kW size threshold, and
+shading/structural/economic constraints not modeled by the cadastre,
+are still excluded).
